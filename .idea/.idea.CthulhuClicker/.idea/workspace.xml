@@ -22,7 +22,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -58,7 +58,10 @@
       <workItem from="1647532178638" duration="944000" />
       <workItem from="1647567176389" duration="1079000" />
       <workItem from="1647795367765" duration="1208000" />
-      <workItem from="1648007073198" duration="9443000" />
+      <workItem from="1648007073198" duration="9759000" />
+      <workItem from="1648328450631" duration="2660000" />
+      <workItem from="1648391131855" duration="5700000" />
+      <workItem from="1648581635960" duration="18699000" />
     </task>
     <servers />
   </component>
@@ -68,6 +71,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
