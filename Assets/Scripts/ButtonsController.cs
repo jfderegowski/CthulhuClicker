@@ -14,12 +14,12 @@ public class ButtonsController : MonoBehaviour
     {
         for (int i = 0; i < _buttons.Count; i++)
         {
-            _buttons[i].onClick.AddListener(delegate
+            int y = i;
+            _buttons[y].onClick.AddListener(delegate
             {
                 ClosePanels(_panels);
-                _panels[i].SetActive(true);
+                _panels[y].SetActive(true);
             });
-            Debug.Log($"{_buttons[i]} -- {_panels[i]}");
         }
     }
 
