@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class ClickerUi : MonoBehaviour
+public class UpdateScoreUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _counterText;
 
