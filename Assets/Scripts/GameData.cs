@@ -5,8 +5,8 @@ public class GameData : MonoBehaviour
 {
     public long Points;
 
-    public GameData(long points)
+    public GameData(GameData gameData)
     {
-        Points = points;
+        Points = gameData.Points;
     }
 }

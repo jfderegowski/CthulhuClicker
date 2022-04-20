@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
-public class SaveGameData : MonoBehaviour
+public static class SaveAndLoadSystem
 {
-    public static void Save(long points)
+    public static void SaveGameData(GameData gameData)
     {
         BinaryFormatter binaryFormatter = new BinaryFormatter();
         string path = $"{Application.persistentDataPath}/GameData.bin";
         FileStream fileStream = new FileStream(path, FileMode.Create);
 
-        GameData gameData = new GameData(points);
+        GameData dataToSave = new GameData(gameData);
         
         binaryFormatter.Serialize(fileStream, gameData);
         fileStream.Close();
@@ -27,10 +25,10 @@ public class SaveGameData : MonoBehaviour
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             FileStream fileStream = new FileStream(path, FileMode.Open);
             
-            GameData gameData = binaryFormatter.Deserialize(fileStream) as GameData;
+            GameData dataToLoad = binaryFormatter.Deserialize(fileStream) as GameData;
             fileStream.Close();
 
-            return gameData;
+            return dataToLoad;
         }
         else
         {
