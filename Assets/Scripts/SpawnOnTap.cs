@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnOnTap : MonoBehaviour
 {
     [SerializeField] private Transform _objToSpawn;
-    public LeanScreenDepth ScreenDepth = new LeanScreenDepth(LeanScreenDepth.ConversionType.DepthIntercept);
+    [SerializeField] private LeanScreenDepth ScreenDepth = new LeanScreenDepth(LeanScreenDepth.ConversionType.DepthIntercept);
     private void OnEnable()
     {
         LeanTouch.OnFingerTap += Spawn;
@@ -21,7 +21,7 @@ public class SpawnOnTap : MonoBehaviour
         if (finger.Tap)
         {
             var position = ScreenDepth.Convert(finger.ScreenPosition, gameObject);
-            var clone = Instantiate(_objToSpawn, position, _objToSpawn.rotation);
+            var clone = Instantiate(_objToSpawn, position, _objToSpawn.rotation, gameObject.transform);
             clone.gameObject.SetActive(true);
         }
     }

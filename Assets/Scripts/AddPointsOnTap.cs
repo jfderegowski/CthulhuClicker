@@ -4,21 +4,21 @@ using UnityEngine;
 public class AddPointsOnTap : MonoBehaviour
 {
     [SerializeField] private UpdateScoreUI _scoreDisplay;
-    private int _score;
+    [SerializeField] private PointsManager _pointsManager;
 
     private void OnEnable()
     {
-        LeanTouch.OnFingerTap += AddPoints;
+        LeanTouch.OnFingerTap += AddPointsAndUpdateUI;
     }
 
     private void OnDisable()
     {
-        LeanTouch.OnFingerTap -= AddPoints;
+        LeanTouch.OnFingerTap -= AddPointsAndUpdateUI;
     }
 
-    private void AddPoints(LeanFinger finger)
+    private void AddPointsAndUpdateUI(LeanFinger finger)
     {
-        _scoreDisplay.UpdateUI(_score);
-        _score++;
+        _pointsManager.AddPoints();
+        _scoreDisplay.UpdateUI(_pointsManager.Points);
     }
 }

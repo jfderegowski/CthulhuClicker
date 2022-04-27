@@ -1,21 +1,32 @@
+using System.IO;
 using UnityEngine;
 
 public class SaveAndLoadGame : MonoBehaviour
 {
+    [SerializeField] private GameDataCollector _gameDataCollector;
+    
     private GameData _gameData;
+    private string _savePath;
 
-    private void OnEnable()
+    private void Start()
     {
-        GameData loadedGameData = SaveAndLoadSystem.LoadGameData();
-
-        _gameData = GetComponent<GameData>();
-        _gameData = loadedGameData;
+        _savePath = $"{Application.dataPath}/Save.json";
+        LoadGame();
     }
 
-    private void OnDisable()
+    private void OnApplicationQuit() => SaveGame();
+
+    private void SaveGame()
     {
-        _gameData = GetComponent<GameData>();
-        
-        SaveAndLoadSystem.SaveGameData(_gameData);
+        _gameData = new GameData(GetComponent<GameDataCollector>());
+        var dataToSave = JsonUtility.ToJson(_gameData);
+        File.WriteAllText(_savePath, dataToSave);
+    }
+
+    private void LoadGame()
+    {
+        var dataToLoad = File.ReadAllText(_savePath);
+        var gameData = JsonUtility.FromJson<GameData>(dataToLoad);
+        _gameDataCollector.LoadData(gameData);
     }
 }

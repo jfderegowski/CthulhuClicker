@@ -7,6 +7,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/VerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/23f4d82dce454f03b034c0ffb6a0e01d39400/c1/27602343/02000029pdb.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -70,6 +75,12 @@
       <workItem from="1650331825581" duration="593000" />
       <workItem from="1650377067691" duration="2187000" />
       <workItem from="1650452408135" duration="4689000" />
+      <workItem from="1650541233298" duration="4995000" />
+      <workItem from="1650625583153" duration="13165000" />
+      <workItem from="1650720184278" duration="12914000" />
+      <workItem from="1650891306828" duration="15900000" />
+      <workItem from="1650973036858" duration="3597000" />
+      <workItem from="1651063930126" duration="5024000" />
     </task>
     <servers />
   </component>
