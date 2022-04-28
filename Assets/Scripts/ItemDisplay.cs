@@ -11,6 +11,7 @@ public class Item
     public string Name;
     public Sprite Sprite;
     public uint Lvl;
+    public GameObject ObjectOnIsland;
 }
 
 [Serializable]
@@ -34,7 +35,15 @@ public class ItemDisplay : MonoBehaviour
                 var clone = Instantiate(shopPanel.PatternObject, shopPanel.ShopContentPanel);
                 clone.GetChild(0).GetComponent<Image>().sprite = item.Sprite;
                 clone.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.Name;
-                clone.GetChild(2).GetComponent<Button>();
+                
+                clone.GetChild(2).GetComponent<Button>().onClick.AddListener(delegate
+                {
+                    item.ObjectOnIsland.SetActive(true);
+                    item.Lvl++;
+                    clone.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text =
+                        $"{item.Name}: {item.Lvl} Lvl.";
+                });
+                
                 clone.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = item.Lvl.ToString();
             }
         }

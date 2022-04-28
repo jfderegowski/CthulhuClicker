@@ -1,9 +1,12 @@
 using System;
 using Lean.Touch;
+using TMPro;
 using UnityEngine;
 
 public class SpawnOnTap : MonoBehaviour
 {
+    [SerializeField] private Transform _camera;
+    [SerializeField] private PointsManager _pointsManager;
     [SerializeField] private Transform _objToSpawn;
     [SerializeField] private LeanScreenDepth ScreenDepth = new LeanScreenDepth(LeanScreenDepth.ConversionType.DepthIntercept);
     private void OnEnable()
@@ -22,7 +25,8 @@ public class SpawnOnTap : MonoBehaviour
         {
             var position = ScreenDepth.Convert(finger.ScreenPosition, gameObject);
             var clone = Instantiate(_objToSpawn, position, _objToSpawn.rotation, gameObject.transform);
-            clone.gameObject.SetActive(true);
+            clone.LookAt(_camera);
+            clone.GetChild(1).GetComponent<TextMeshPro>().text = _pointsManager.CountPointsToAdd().ToString();
         }
     }
 }

@@ -25,13 +25,13 @@ public class OpeningShop : MonoBehaviour
 
     private void HandleFingerSwipe(LeanFinger finger)
     {
-        if (finger.StartScreenPosition.x > finger.ScreenPosition.x)
+        if (finger.StartScreenPosition.x > finger.ScreenPosition.x-200)
         {
             _shopPanelTransform
                 .DOLocalMoveX(0f, 0.2f);
         }
 
-        if (finger.StartScreenPosition.x < finger.ScreenPosition.x)
+        if (finger.StartScreenPosition.x < finger.ScreenPosition.x+200)
         {
             _shopPanelTransform
                 .DOLocalMoveX(_closeShopPanelPosition, 0.2f);

@@ -6,6 +6,12 @@ public class PointsManager : MonoBehaviour
 
     public void AddPoints()
     {
-        Points++;
+        Points += CountPointsToAdd();
+    }
+
+    public ulong CountPointsToAdd()
+    {
+        ulong toAdd = 1;
+        return toAdd;
     }
 }
