@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PointsManager : MonoBehaviour
@@ -13,5 +14,10 @@ public class PointsManager : MonoBehaviour
     {
         ulong toAdd = 1;
         return toAdd;
+    }
+
+    public void SubtractPoints(ulong price)
+    {
+        Points -= price;
     }
 }

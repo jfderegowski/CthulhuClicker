@@ -627,5 +627,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sprite: {fileID: 4223825343103611158}
-  _text: {fileID: 8628825587443952824}
+  _itemDescription: {fileID: 8628825587443952824}
   _buttonText: {fileID: 5197295421907921105}
