@@ -566,7 +566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3551664392235969187, guid: 87c54b5341a18c34fab8781f90b87cd0, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3551664392235969187, guid: 87c54b5341a18c34fab8781f90b87cd0, type: 3}
       propertyPath: m_AnchorMax.x
@@ -976,42 +976,42 @@ MonoBehaviour:
     Mps: 1
     MaxCount: 0
     Count: 0
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: d8e7df3bf79590b4386bfb90f3da4d60, type: 3}
   _items:
   - Name: House
     Price: 500
     Lvl: 0
     Mps: 1
     MaxFolowersCount: 10
-    Sprite: {fileID: 21300000, guid: 3692f5a12c28cd945b435850a456d1cf, type: 3}
+    Sprite: {fileID: 21300000, guid: a7eb3610a289a094887b636d183fc8ce, type: 3}
     ObjectOnIsland: {fileID: 1937378741}
   - Name: Town Hall
     Price: 7500
     Lvl: 0
     Mps: 10
     MaxFolowersCount: 15
-    Sprite: {fileID: 21300000, guid: 5b4d25270e5b6fc4682a0d23214ee344, type: 3}
+    Sprite: {fileID: 21300000, guid: d2344d505eee5ca4ea1d6fa7fd07313f, type: 3}
     ObjectOnIsland: {fileID: 0}
   - Name: Lighthouse
     Price: 12000
     Lvl: 0
     Mps: 100
     MaxFolowersCount: 20
-    Sprite: {fileID: 21300000, guid: 5b4d25270e5b6fc4682a0d23214ee344, type: 3}
+    Sprite: {fileID: 21300000, guid: e96d148f9be4fb84b97ec6c88154a221, type: 3}
     ObjectOnIsland: {fileID: 0}
   - Name: Harbour
     Price: 2500000
     Lvl: 5
     Mps: 0
     MaxFolowersCount: 30
-    Sprite: {fileID: 21300000, guid: 5b4d25270e5b6fc4682a0d23214ee344, type: 3}
+    Sprite: {fileID: 21300000, guid: 263ecc93647db86409ccc93faeacee8e, type: 3}
     ObjectOnIsland: {fileID: 0}
   - Name: Temple
     Price: 500000
     Lvl: 5
     Mps: 0
     MaxFolowersCount: 40
-    Sprite: {fileID: 21300000, guid: 5b4d25270e5b6fc4682a0d23214ee344, type: 3}
+    Sprite: {fileID: 21300000, guid: fc5a968bdc2c29441a8e9f5c3030ae9a, type: 3}
     ObjectOnIsland: {fileID: 0}
   - Name: Statue
     Price: 1000000000
@@ -1031,7 +1031,7 @@ GameObject:
   - component: {fileID: 609756891}
   - component: {fileID: 609756893}
   - component: {fileID: 609756892}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1205,7 +1205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946524433}
   - component: {fileID: 946524434}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1226,7 @@ RectTransform:
   - {fileID: 1539542667}
   - {fileID: 1742273474}
   m_Father: {fileID: 1046759734}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1498,6 +1498,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1377961432}
   - {fileID: 946524433}
   - {fileID: 297739534}
   m_Father: {fileID: 0}
@@ -1596,6 +1597,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1377961431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377961432}
+  m_Layer: 5
+  m_Name: FloatingTextHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1377961432
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377961431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1046759734}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1383358594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,7 +1778,7 @@ GameObject:
   - component: {fileID: 1539542666}
   - component: {fileID: 1539542665}
   - component: {fileID: 1539542668}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1896,7 +1932,7 @@ GameObject:
   - component: {fileID: 1615312838}
   - component: {fileID: 1615312840}
   - component: {fileID: 1615312839}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2129,7 +2165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742273474}
   - component: {fileID: 1742273475}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2194,7 +2230,7 @@ GameObject:
   - component: {fileID: 2008445987}
   - component: {fileID: 2008445989}
   - component: {fileID: 2008445988}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2331,6 +2367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 650d1667bee4a894297b33074df39e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _floatingTextHolder: {fileID: 1377961432}
   _camera: {fileID: 1302638887}
   _pointsManager: {fileID: 2067500710}
   _objToSpawn: {fileID: 1024450126181392579, guid: 32edbb49b11bdf84db843e4dee65a5fb, type: 3}
