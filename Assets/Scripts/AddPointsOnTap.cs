@@ -22,7 +22,6 @@ public class AddPointsOnTap : MonoBehaviour
         {
             _pointsManager.AddPoints();
             _scoreDisplay.UpdateUI(_pointsManager.Points);
-            Debug.Log("tap");
         }
         
     }

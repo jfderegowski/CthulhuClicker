@@ -8,7 +8,7 @@ public class SpawnOnTap : MonoBehaviour
     [SerializeField] private Transform _floatingTextHolder;
     [SerializeField] private Transform _camera;
     [SerializeField] private PointsManager _pointsManager;
-    [SerializeField] private Transform _objToSpawn;
+    [SerializeField] private RectTransform _objToSpawn;
     [SerializeField] private LeanScreenDepth ScreenDepth = new LeanScreenDepth(LeanScreenDepth.ConversionType.DepthIntercept);
     
     private void OnEnable()
@@ -25,10 +25,11 @@ public class SpawnOnTap : MonoBehaviour
     {
         if (finger.Tap && !finger.StartedOverGui)
         {
-            var position = ScreenDepth.Convert(finger.ScreenPosition, gameObject);
-            var clone = Instantiate(_objToSpawn, position, _objToSpawn.rotation, _floatingTextHolder);
-            clone.LookAt(_camera);
-            clone.GetChild(1).GetComponent<TextMeshPro>().text = _pointsManager.CountPointsToAdd().ToString();
+            var objPosition = finger.ScreenPosition;
+            var objRotation = _objToSpawn.rotation;
+            var clone = Instantiate(_objToSpawn, objPosition, objRotation, _floatingTextHolder);
+            
+            clone.GetChild(1).GetComponent<TextMeshProUGUI>().text = _pointsManager.CountPointsToAdd().ToString();
         }
     }
 }

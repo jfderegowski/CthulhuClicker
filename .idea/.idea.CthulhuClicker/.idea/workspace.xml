@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3976c5f0-f89f-4d48-8447-8feb317e4ddf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CthulhuClicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CthulhuClicker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/FloatingText.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/FloatingText.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/PatternBuildingItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PatternBuildingItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Save.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Save.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Janek.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Janek.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AddPointsOnTap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AddPointsOnTap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnOnTap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnOnTap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="3976c5f0-f89f-4d48-8447-8feb317e4ddf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +88,7 @@
       <workItem from="1651164358219" duration="2697000" />
       <workItem from="1651718083518" duration="11334000" />
       <workItem from="1651753466558" duration="4528000" />
+      <workItem from="1651843384527" duration="3240000" />
     </task>
     <servers />
   </component>
@@ -116,7 +108,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
