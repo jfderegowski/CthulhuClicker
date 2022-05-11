@@ -6,10 +6,8 @@ using UnityEngine;
 public class SpawnOnTap : MonoBehaviour
 {
     [SerializeField] private Transform _floatingTextHolder;
-    [SerializeField] private Transform _camera;
     [SerializeField] private PointsManager _pointsManager;
     [SerializeField] private RectTransform _objToSpawn;
-    [SerializeField] private LeanScreenDepth ScreenDepth = new LeanScreenDepth(LeanScreenDepth.ConversionType.DepthIntercept);
     
     private void OnEnable()
     {

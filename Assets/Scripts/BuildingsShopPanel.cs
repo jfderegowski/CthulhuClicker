@@ -52,7 +52,7 @@ public class BuildingsShopPanel : MonoBehaviour
         
         cloneFollower.GetChild(2).GetComponent<Button>().onClick.AddListener(delegate
         {
-            if (_pointsManager.Points >= _follower.Price)
+            if (_pointsManager.Points >= _follower.Price && _follower.MaxCount >= _follower.Count)
             {
                 _follower.Lvl++;
                 _follower.Count++;
