@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9115987242916044570}
   - component: {fileID: 3966120824210428767}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: T_ManaIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7052126877687965576}
   - component: {fileID: 45495832486503055}
   - component: {fileID: 7408511774391785025}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1024450126181392579}
   - component: {fileID: 2498015197952879649}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: FloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
