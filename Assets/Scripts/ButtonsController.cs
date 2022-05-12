@@ -1,36 +1,59 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ButtonsController : MonoBehaviour
 {
-    [SerializeField] private List<Button> _buttons;
-    [SerializeField] private List<GameObject> _panels;
+    [SerializeField] private List<ButtonsAndPanels> _buttonsAndPanelsList;
 
     private void Awake()
     {
-        for (int i = 0; i < _buttons.Count; i++)
+        foreach (var i in _buttonsAndPanelsList)
         {
-            int y = i;
-            _buttons[y].onClick.AddListener(delegate
+            i.Button.onClick.AddListener(delegate
             {
-                ClosePanels(_panels);
-                _panels[y].SetActive(true);
+                ClosePanels(_buttonsAndPanelsList);
+                i.Panel.SetActive(true);
             });
         }
     }
-
-    private void OpenPanel(GameObject gameObject, List<GameObject> gameObjects)
-    {
-        ClosePanels(gameObjects);
-        gameObject.SetActive(true);
-    }
     
-    private void ClosePanels(List<GameObject> gameObjects)
+    private void ClosePanels(List<ButtonsAndPanels> buttonsAndPanelsList)
     {
-        foreach (var i in gameObjects)
+        foreach (var i in buttonsAndPanelsList)
         {
-            i.SetActive(false);
+            i.Panel.SetActive(false);
         }
     }
+}
+
+[Serializable]
+public class ButtonsAndPanels
+{
+    public Button Button
+    {
+        get => _button;
+        set
+        {
+            if (value.GetComponent<Button>())
+            {
+                _button = value;
+            }
+        }
+    }
+    public GameObject Panel
+    {
+        get => _panel;
+        set
+        {
+            if (value.GetComponent<RectTransform>())
+            {
+                _panel = value;
+            }
+        }
+    }
+
+    [SerializeField] private Button _button;
+    [SerializeField] private GameObject _panel;
 }

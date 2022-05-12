@@ -18,7 +18,11 @@ public class AddPointsOnTap : MonoBehaviour
 
     private void AddPointsAndUpdateUI(LeanFinger finger)
     {
-        _pointsManager.AddPoints();
-        _scoreDisplay.UpdateUI(_pointsManager.Points);
+        if (!finger.StartedOverGui)
+        {
+            _pointsManager.AddPoints();
+            _scoreDisplay.UpdateUI(_pointsManager.Points);
+        }
+        
     }
 }
