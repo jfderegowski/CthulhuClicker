@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using Patterns;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +18,7 @@ public class Follower
 }
 
 [Serializable]
-public class Item
+public class Building
 {
     public string Name;
     public ulong Price;
@@ -38,7 +37,7 @@ public class BuildingsShopPanel : MonoBehaviour
     [SerializeField] private UpdateScoreUI _updateScoreUI;
 
     [SerializeField] private Follower _follower;
-    [SerializeField] private List<Item> _items;
+    [SerializeField] private List<Building> _items;
 
     private void Start()
     {
