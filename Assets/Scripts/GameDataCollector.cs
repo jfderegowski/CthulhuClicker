@@ -13,6 +13,7 @@ public class GameDataCollector : MonoBehaviour
 public class GameData
 {
     public ulong Points;
+    
 
     public GameData(GameDataCollector gameDataCollector)
     {
