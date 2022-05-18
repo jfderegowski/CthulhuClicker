@@ -6,26 +6,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [Serializable]
-public class Follower
+public class Follower : Item
 {
-    public string Name;
-    public ulong Price;
-    public uint Lvl;
-    public ulong Mps;
     public uint MaxCount;
     public uint Count;
-    public Sprite Sprite;
 }
 
 [Serializable]
-public class Building
+public class Building : Item
 {
-    public string Name;
-    public ulong Price;
-    public uint Lvl;
-    public ulong Mps;
     public uint MaxFolowersCount;
-    public Sprite Sprite;
     public GameObject ObjectOnIsland;
 }
 

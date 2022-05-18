@@ -1,15 +1,12 @@
 using System;
 using System.Collections.Generic;
+using Patterns;
 using UnityEngine;
 
 [Serializable]
-public class Clothes
+public class Clothes : Item
 {
-    public string Name;
-    public ulong Price;
-    public uint Lvl;
-    public ulong Mps;
-    public Sprite Sprite;
+    
 }
 
 public class ClothesShopPanel : MonoBehaviour

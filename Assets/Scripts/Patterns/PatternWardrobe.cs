@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PatternWardrobe : MonoBehaviour
+namespace Patterns
 {
-    [SerializeField] private Image _image;
-
-    public void ImportData(Sprite sprite)
+    public class PatternWardrobe : MonoBehaviour
     {
-        _image.sprite = sprite;
+        [SerializeField] private Image _image;
+
+        public void ImportData(Sprite sprite)
+        {
+            _image.sprite = sprite;
+        }
     }
 }
