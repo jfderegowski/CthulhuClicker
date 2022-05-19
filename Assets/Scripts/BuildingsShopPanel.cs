@@ -26,8 +26,10 @@ public class BuildingsShopPanel : MonoBehaviour
     [SerializeField] private PointsManager _pointsManager;
     [SerializeField] private UpdateScoreUI _updateScoreUI;
 
+    public Follower Follower => _follower;
     [SerializeField] private Follower _follower;
-    [SerializeField] private List<Building> _items;
+    public List<Building> Buildings => _buildings;
+    [SerializeField] private List<Building> _buildings;
 
     private void Start()
     {
@@ -63,7 +65,7 @@ public class BuildingsShopPanel : MonoBehaviour
 
         
         // lista itemów
-        foreach (var item in _items)
+        foreach (var item in _buildings)
         {
             var clone = Instantiate(_patternObject, _shopContentPanel);
             clone.GetComponent<PatternBuilding>().ImportData(

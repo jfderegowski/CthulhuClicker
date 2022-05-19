@@ -5,6 +5,9 @@ public class PointsManager : MonoBehaviour
 {
     public ulong Points;
 
+    [SerializeField] private BuildingsShopPanel _buildingsShopPanel;
+    [SerializeField] private ClothesShopPanel _clothesShopPanel;
+
     public void AddPoints()
     {
         Points += CountPointsToAdd();
@@ -12,7 +15,7 @@ public class PointsManager : MonoBehaviour
 
     public ulong CountPointsToAdd()
     {
-        ulong toAdd = 1;
+        ulong toAdd = _buildingsShopPanel.Follower.Mps + 1;
         return toAdd;
     }
 

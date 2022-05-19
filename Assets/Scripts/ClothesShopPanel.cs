@@ -4,6 +4,29 @@ using Patterns;
 using UnityEngine;
 
 [Serializable]
+public class ClothesPanels
+{
+    public Transform contentPanel
+    {
+        get => _contentPanel;
+        set => _contentPanel = value;
+    }
+    [SerializeField] private Transform _contentPanel;
+    public Transform patternObject
+    {
+        get => _patternObject;
+        set => _patternObject = value;
+    }
+    [SerializeField] private Transform _patternObject;
+    public List<Clothes> Clothes
+    {
+        get => _clothes;
+        set => _clothes = value;
+    }
+    [SerializeField] private List<Clothes> _clothes;
+}
+
+[Serializable]
 public class Clothes : Item
 {
     
@@ -11,17 +34,17 @@ public class Clothes : Item
 
 public class ClothesShopPanel : MonoBehaviour
 {
-    [SerializeField] private Transform _contentPanel;
-    [SerializeField] private Transform _patternObject;
-    [SerializeField] private List<Clothes> _items;
-
-
+    [SerializeField] private List<ClothesPanels> _clothesPanels;
+    
     private void Awake()
     {
-        foreach (var item in _items)
+        foreach (var clothesPanel in _clothesPanels)
         {
-            var clone = Instantiate(_patternObject, _contentPanel);
-            clone.GetComponent<PatternWardrobe>().ImportData(item.Sprite);
+            foreach (var clothes in clothesPanel.Clothes)
+            {
+                var clone = Instantiate(clothesPanel.patternObject, clothesPanel.contentPanel);
+                clone.GetComponent<PatternWardrobe>().ImportData(clothes.Sprite);
+            }
         }
     }
 }
