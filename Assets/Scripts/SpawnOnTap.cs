@@ -6,7 +6,7 @@ using UnityEngine;
 public class SpawnOnTap : MonoBehaviour
 {
     [SerializeField] private Transform _floatingTextHolder;
-    [SerializeField] private PointsManager _pointsManager;
+    [SerializeField] private AddPointsOnTap _addPointsOnTap;
     [SerializeField] private RectTransform _objToSpawn;
     
     private void OnEnable()
@@ -26,8 +26,8 @@ public class SpawnOnTap : MonoBehaviour
             var objPosition = finger.ScreenPosition;
             var objRotation = _objToSpawn.rotation;
             var clone = Instantiate(_objToSpawn, objPosition, objRotation, _floatingTextHolder);
-            
-            clone.GetChild(1).GetComponent<TextMeshProUGUI>().text = _pointsManager.CountPointsToAdd().ToString();
+
+            clone.GetChild(1).GetComponent<TextMeshProUGUI>().text = $"+{_addPointsOnTap.CountPointsToAdd()}";
         }
     }
 }

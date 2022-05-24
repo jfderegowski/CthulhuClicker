@@ -4,7 +4,7 @@ using Patterns;
 using UnityEngine;
 
 [Serializable]
-public class ClothesPanels
+public class Wardrobe
 {
     public Transform contentPanel
     {
@@ -34,7 +34,7 @@ public class Clothes : Item
 
 public class ClothesShopPanel : MonoBehaviour
 {
-    [SerializeField] private List<ClothesPanels> _clothesPanels;
+    [SerializeField] private List<Wardrobe> _clothesPanels;
     
     private void Awake()
     {
