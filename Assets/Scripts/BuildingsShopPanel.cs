@@ -2,31 +2,20 @@ using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using Patterns;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 [Serializable]
-public class Follower
+public class Follower : Item
 {
-    public string Name;
-    public ulong Price;
-    public uint Lvl;
-    public ulong Mps;
     public uint MaxCount;
     public uint Count;
-    public Sprite Sprite;
 }
 
 [Serializable]
-public class Item
+public class Building : Item
 {
-    public string Name;
-    public ulong Price;
-    public uint Lvl;
-    public ulong Mps;
     public uint MaxFolowersCount;
-    public Sprite Sprite;
     public GameObject ObjectOnIsland;
 }
 
@@ -37,8 +26,10 @@ public class BuildingsShopPanel : MonoBehaviour
     [SerializeField] private PointsManager _pointsManager;
     [SerializeField] private UpdateScoreUI _updateScoreUI;
 
+    public Follower Follower => _follower;
     [SerializeField] private Follower _follower;
-    [SerializeField] private List<Item> _items;
+    public List<Building> Buildings => _buildings;
+    [SerializeField] private List<Building> _buildings;
 
     private void Start()
     {
@@ -74,7 +65,7 @@ public class BuildingsShopPanel : MonoBehaviour
 
         
         // lista itemów
-        foreach (var item in _items)
+        foreach (var item in _buildings)
         {
             var clone = Instantiate(_patternObject, _shopContentPanel);
             clone.GetComponent<PatternBuilding>().ImportData(

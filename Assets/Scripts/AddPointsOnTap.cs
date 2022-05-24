@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AddPointsOnTap : MonoBehaviour
 {
-    [SerializeField] private UpdateScoreUI _scoreDisplay;
+    [SerializeField] private UpdateScoreUI _updateScoreUI;
     [SerializeField] private PointsManager _pointsManager;
 
     private void OnEnable()
@@ -20,9 +20,14 @@ public class AddPointsOnTap : MonoBehaviour
     {
         if (!finger.StartedOverGui)
         {
-            _pointsManager.AddPoints();
-            _scoreDisplay.UpdateUI(_pointsManager.Points);
+            _pointsManager.AddPoints(CountPointsToAdd());
+            _updateScoreUI.UpdateUI(_pointsManager.Points);
         }
-        
+    }
+
+    public ulong CountPointsToAdd()
+    {
+        ulong pointsToAdd = _pointsManager.BuildingsShopPanel.Follower.Mps;
+        return pointsToAdd;
     }
 }
