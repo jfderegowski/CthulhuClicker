@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 81578d8f2e8f1da4ca7504892aeb5242
+=======
+guid: 76616ae881f7745438ec7342e82c7d3a
+>>>>>>> Janek
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []

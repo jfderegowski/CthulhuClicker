@@ -33,3 +33,12 @@ public class Item
     }
     [SerializeField] private Sprite _sprite;
 }
+
+public enum ItemType
+{
+    Wings,
+    Body,
+    Eye,
+    Shirt,
+    Hat
+}

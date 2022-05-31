@@ -32,7 +32,7 @@ public class OpeningCamp : MonoBehaviour
 
     private void HandleFingerSwipe(LeanFinger finger)
     {
-        if (finger.StartScreenPosition.y > finger.ScreenPosition.y-200)
+        if (finger.StartScreenPosition.y > finger.ScreenPosition.y-200  && !finger.StartedOverGui)
         {
             _mainCharacter.SetActive(false);
             
@@ -43,7 +43,7 @@ public class OpeningCamp : MonoBehaviour
             _camera.DORotate(new Vector3(45f, 0f, 0f), 0.2f);
         }
 
-        if (finger.StartScreenPosition.y < finger.ScreenPosition.y+200)
+        if (finger.StartScreenPosition.y < finger.ScreenPosition.y+200  && !finger.StartedOverGui)
         {
             _mainCharacter.SetActive(true);
             
