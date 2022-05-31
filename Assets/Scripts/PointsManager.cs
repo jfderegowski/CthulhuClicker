@@ -5,17 +5,17 @@ public class PointsManager : MonoBehaviour
 {
     public ulong Points;
 
-    public void AddPoints()
-    {
-        Points += CountPointsToAdd();
-    }
+    public BuildingsShopPanel BuildingsShopPanel => _buildingsShopPanel;
+    public ClothesShopPanel ClothesShopPanel => _clothesShopPanel;
 
-    public ulong CountPointsToAdd()
-    {
-        ulong toAdd = 1;
-        return toAdd;
-    }
+    [SerializeField] private BuildingsShopPanel _buildingsShopPanel;
+    [SerializeField] private ClothesShopPanel _clothesShopPanel;
 
+    public void AddPoints(ulong pointsToAdd)
+    {
+        Points += pointsToAdd;
+    }
+    
     public void SubtractPoints(ulong price)
     {
         Points -= price;
