@@ -203,7 +203,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: :OO$$
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1711836461
@@ -905,8 +905,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wardrobe
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
+  m_sharedMaterial: {fileID: -5503706196769265981, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1279,8 +1279,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Clothes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
+  m_sharedMaterial: {fileID: -5503706196769265981, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1646,8 +1646,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Settings
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
+  m_sharedMaterial: {fileID: -5503706196769265981, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1855,8 +1855,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Shirts
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
+  m_sharedMaterial: {fileID: -5503706196769265981, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1989,8 +1989,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Buildings
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
+  m_sharedMaterial: {fileID: -5503706196769265981, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2596,8 +2596,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hats
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
+  m_sharedMaterial: {fileID: -5503706196769265981, guid: 9346da0c3588ffd48a9c780316826001, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2991,6 +2991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fff073d3c823cc40995964da7f4585c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pointsManager: {fileID: 0}
+  _updateScoreUI: {fileID: 0}
   _contentPanelForItemCard: {fileID: 1711836462}
   _clothesPanels:
   - _contentPanel: {fileID: 3551664390971444808}
@@ -3004,12 +3006,14 @@ MonoBehaviour:
       _mps: 0
       _sprite: {fileID: 21300000, guid: 2aedbbb7fee33284d9680c155ffa8271, type: 3}
       _itemDescription: fanu capaek
+      _uIIcon: {fileID: 0}
     - _name: spodenek
       _price: 0
       _lvl: 0
       _mps: 0
       _sprite: {fileID: 21300000, guid: 33d9b05f5af3c9149910045e4a331c53, type: 3}
       _itemDescription: fajny spodenek
+      _uIIcon: {fileID: 0}
   - _contentPanel: {fileID: 3551664391601860271}
     _patternObject: {fileID: 880362165956499981, guid: d2b8111f537fd25429831fdd457cecce, type: 3}
     _patternItemCard: {fileID: 3175297232141965476, guid: 3714202a76f9e6a4f86f3d2f84983c26, type: 3}
@@ -3021,12 +3025,14 @@ MonoBehaviour:
       _mps: 0
       _sprite: {fileID: 21300000, guid: c38313e069005c14898b27d9254099fa, type: 3}
       _itemDescription: fany koszulek
+      _uIIcon: {fileID: 0}
     - _name: smokingek
       _price: 0
       _lvl: 0
       _mps: 0
       _sprite: {fileID: 21300000, guid: 3f04f80d497ef674b9b3590fb04cd01c, type: 3}
       _itemDescription: fajny smokinkeg
+      _uIIcon: {fileID: 0}
 --- !u!1 &7026592346677478509
 GameObject:
   m_ObjectHideFlags: 0
