@@ -7,6 +7,7 @@ public class OpeningCamp : MonoBehaviour
     [SerializeField] private GameObject _mainCharacter;
     [SerializeField] private Transform _island;
     [SerializeField] private Transform _camera;
+    [SerializeField] private Transform _cameraNewPosition;
     
     private float _closeIslandDistance;
     private Vector3 _cameraDefaultPosition;
@@ -17,7 +18,6 @@ public class OpeningCamp : MonoBehaviour
         _closeIslandDistance = _island.transform.position.z;
         _cameraDefaultPosition = _camera.position;
         _cameraDefaultRotation = _camera.eulerAngles;
-        
     }
 
     private void OnEnable()
@@ -32,18 +32,18 @@ public class OpeningCamp : MonoBehaviour
 
     private void HandleFingerSwipe(LeanFinger finger)
     {
-        if (finger.StartScreenPosition.y > finger.ScreenPosition.y-200)
+        if (finger.StartScreenPosition.y > finger.ScreenPosition.y-200  && !finger.StartedOverGui)
         {
             _mainCharacter.SetActive(false);
             
             _island.transform
                 .DOLocalMoveZ(0f, 0.2f);
 
-            _camera.DOMove(new Vector3(0f,15f,-25f), 0.2f);
+            _camera.DOMove(_cameraNewPosition.position, 0.2f);
             _camera.DORotate(new Vector3(45f, 0f, 0f), 0.2f);
         }
 
-        if (finger.StartScreenPosition.y < finger.ScreenPosition.y+200)
+        if (finger.StartScreenPosition.y < finger.ScreenPosition.y+200  && !finger.StartedOverGui)
         {
             _mainCharacter.SetActive(true);
             

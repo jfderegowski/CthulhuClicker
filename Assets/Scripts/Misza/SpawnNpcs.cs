@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class SpawnNpcs : MonoBehaviour
 {
-    [SerializeField] private int _numberOfNpcs;
-    [SerializeField] private int _numberOfSpawnedNpcs;
     public List<GameObject> destination = new List<GameObject>();
     public GameObject NPC;
+    
+    [SerializeField] private BuildingsShopPanel _buildingsShopPanel;
+
+    private int _numberOfNpcs;
+    private int _numberOfSpawnedNpcs;
 
     private void Start()
     {
         SpawnNpc();
     }
 
-    void SpawnNpc()
+    public void SpawnNpc()
     {
+        _numberOfNpcs = (int)_buildingsShopPanel.Follower.Count;
+        
         if ((_numberOfSpawnedNpcs < _numberOfNpcs) && (_numberOfSpawnedNpcs < destination.Count))
         {
             int max = 0;
