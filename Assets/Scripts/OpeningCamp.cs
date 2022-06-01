@@ -5,7 +5,7 @@ using UnityEngine;
 public class OpeningCamp : MonoBehaviour
 {
     [SerializeField] private GameObject _mainCharacter;
-    [SerializeField] private Transform _island;
+    //[SerializeField] private Transform _island;
     [SerializeField] private Transform _camera;
     [SerializeField] private Transform _cameraNewPosition;
     
@@ -15,7 +15,7 @@ public class OpeningCamp : MonoBehaviour
 
     private void Awake()
     {
-        _closeIslandDistance = _island.transform.position.z;
+        //_closeIslandDistance = _island.transform.position.z;
         _cameraDefaultPosition = _camera.position;
         _cameraDefaultRotation = _camera.eulerAngles;
     }
@@ -36,8 +36,8 @@ public class OpeningCamp : MonoBehaviour
         {
             _mainCharacter.SetActive(false);
             
-            _island.transform
-                .DOLocalMoveZ(0f, 0.2f);
+            //_island.transform
+                //.DOLocalMoveZ(0f, 0.2f);
 
             _camera.DOMove(_cameraNewPosition.position, 0.2f);
             _camera.DORotate(new Vector3(45f, 0f, 0f), 0.2f);
@@ -47,8 +47,8 @@ public class OpeningCamp : MonoBehaviour
         {
             _mainCharacter.SetActive(true);
             
-            _island.transform
-                .DOLocalMoveZ(_closeIslandDistance, 0.2f);
+            //_island.transform
+                //.DOLocalMoveZ(_closeIslandDistance, 0.2f);
 
             _camera.DOMove(_cameraDefaultPosition, 0.2f);
             _camera.DORotate(_cameraDefaultRotation, 0.2f);
