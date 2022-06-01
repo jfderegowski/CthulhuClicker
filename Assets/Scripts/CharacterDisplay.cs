@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,4 +35,28 @@ public class CharacterDisplay : MonoBehaviour
     [SerializeField] private Image _eye;
     [SerializeField] private Image _shirt;
     [SerializeField] private Image _hat;
+
+    public void EquipItem(Sprite sprite, ItemType itemType)
+    {
+        switch (itemType)
+        {
+            case ItemType.Hat:
+                _hat.sprite = sprite;
+                break;
+            case ItemType.Shirt:
+                _shirt.sprite = sprite;
+                break;
+            case ItemType.Wings:
+                _wings.sprite = sprite;
+                break;
+            case ItemType.Body:
+                _body.sprite = sprite;
+                break;
+            case ItemType.Eye:
+                _eye.sprite = sprite;
+                break;
+            default:
+                break;
+        }
+    }
 }

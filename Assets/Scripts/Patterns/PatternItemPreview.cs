@@ -9,6 +9,9 @@ namespace Patterns
 {
     public class PatternItemPreview : MonoBehaviour
     {
+        public Transform ButtonBuyTransform => _buttonBuy.transform;
+        public Transform ButtonEquipTransform => _buttonEquip.transform;
+
         [SerializeField] private CharacterDisplay _characterDisplay;
         [SerializeField] private TextMeshProUGUI _itemTitle;
         [SerializeField] private TextMeshProUGUI _itemDescription;

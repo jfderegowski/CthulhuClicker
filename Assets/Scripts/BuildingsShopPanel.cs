@@ -25,6 +25,7 @@ public class BuildingsShopPanel : MonoBehaviour
     [SerializeField] private Transform _patternObject;
     [SerializeField] private PointsManager _pointsManager;
     [SerializeField] private UpdateScoreUI _updateScoreUI;
+    [SerializeField] private SpawnNpcs _spawnNpcs;
 
     public Follower Follower => _follower;
     [SerializeField] private Follower _follower;
@@ -55,6 +56,8 @@ public class BuildingsShopPanel : MonoBehaviour
                     $"{_follower.Name}: {_follower.Lvl}\nPosiadasz: {_follower.Count} followers",
                     $"{_follower.Price} Many"
                 );
+                
+                _spawnNpcs.SpawnNpc();
             }
             else
             {
