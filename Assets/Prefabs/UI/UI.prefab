@@ -3267,18 +3267,39 @@ MonoBehaviour:
     Count: 0
   _buildings:
   - _name: House
-    _price: 50
-    _lvl: 1
-    _mps: 10
-    _sprite: {fileID: 21300000, guid: a7eb3610a289a094887b636d183fc8ce, type: 3}
+    _price: 500
+    _lvl: 0
+    _mps: 1
+    _sprite: {fileID: 21300000, guid: 3f6f89ad8a5ed914d9ee8df30da49392, type: 3}
     MaxFolowersCount: 10
     ObjectOnIsland: {fileID: 0}
-  - _name: Lamp
-    _price: 500
-    _lvl: 2
-    _mps: 0
-    _sprite: {fileID: 21300000, guid: e96d148f9be4fb84b97ec6c88154a221, type: 3}
-    MaxFolowersCount: 5
+  - _name: Town Hall
+    _price: 7500
+    _lvl: 0
+    _mps: 10
+    _sprite: {fileID: 21300000, guid: 198649fac28307a4cb6d5bca0b8e7879, type: 3}
+    MaxFolowersCount: 15
+    ObjectOnIsland: {fileID: 0}
+  - _name: Lighthouse
+    _price: 120000
+    _lvl: 0
+    _mps: 100
+    _sprite: {fileID: 21300000, guid: d3b6faa558939864db9dcd3050cde284, type: 3}
+    MaxFolowersCount: 20
+    ObjectOnIsland: {fileID: 0}
+  - _name: Harbour
+    _price: 2500000
+    _lvl: 0
+    _mps: 1000
+    _sprite: {fileID: 21300000, guid: c2ec6663465864c46b81c5da0fa0be7c, type: 3}
+    MaxFolowersCount: 30
+    ObjectOnIsland: {fileID: 0}
+  - _name: Church
+    _price: 50000000
+    _lvl: 0
+    _mps: 10000
+    _sprite: {fileID: 21300000, guid: ef17e201c731b6c4d8cf0c1e2f4005eb, type: 3}
+    MaxFolowersCount: 50
     ObjectOnIsland: {fileID: 0}
 --- !u!114 &573391917
 MonoBehaviour:

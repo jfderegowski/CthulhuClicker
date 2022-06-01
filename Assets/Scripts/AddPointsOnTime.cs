@@ -29,7 +29,11 @@ public class AddPointsOnTime : MonoBehaviour
 
         foreach (var building in _pointsManager.BuildingsShopPanel.Buildings)
         {
-            pointsToAdd += building.Mps;
+            if (building.Lvl > 0)
+            {
+                pointsToAdd += building.Mps;
+            }
+            
         }
 
         return pointsToAdd;
