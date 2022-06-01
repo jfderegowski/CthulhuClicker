@@ -173,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 1605091660}
     - target: {fileID: 573391916, guid: 87c54b5341a18c34fab8781f90b87cd0, type: 3}
       propertyPath: _follower._mps
-      value: 5000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 573391916, guid: 87c54b5341a18c34fab8781f90b87cd0, type: 3}
       propertyPath: _pointsManager
@@ -1152,7 +1152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3551664390347289463, guid: 87c54b5341a18c34fab8781f90b87cd0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 3551664390347289463, guid: 87c54b5341a18c34fab8781f90b87cd0, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1160,7 +1160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3551664390347289463, guid: 87c54b5341a18c34fab8781f90b87cd0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 3551664390347289463, guid: 87c54b5341a18c34fab8781f90b87cd0, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1679,11 +1679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a6146584d670544db87fc3700aeaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &49642007 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7260032284213143992, guid: 9329aee36888dac46962b0e699a4ea46, type: 3}
-  m_PrefabInstance: {fileID: 1921734635}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &111508664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,7 +2813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mainCharacter: {fileID: 689512810}
-  _island: {fileID: 49642007}
   _camera: {fileID: 1280120955}
   _cameraNewPosition: {fileID: 1649669762}
 --- !u!4 &1523620469
