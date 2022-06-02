@@ -1,1 +1,321 @@
-{"Points":0}
+{
+    "Points": 18446744073684545460,
+    "Wardrobes": [
+        {
+            "_contentPanel": {
+                "instanceID": -4438
+            },
+            "_patternObject": {
+                "instanceID": 17406
+            },
+            "_patternItemCard": {
+                "instanceID": 17408
+            },
+            "_clothesType": 4,
+            "_clothes": [
+                {
+                    "_name": "Frog Hat",
+                    "_price": 10000,
+                    "_lvl": 0,
+                    "_mps": 10,
+                    "_sprite": {
+                        "instanceID": 17410
+                    },
+                    "_itemDescription": "Frog hat.",
+                    "_uIIcon": {
+                        "instanceID": 17412
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Flower Garland",
+                    "_price": 100000,
+                    "_lvl": 0,
+                    "_mps": 100,
+                    "_sprite": {
+                        "instanceID": 17414
+                    },
+                    "_itemDescription": "Something to soothe your nerves… gotta look pretty while destroying the world!",
+                    "_uIIcon": {
+                        "instanceID": 17416
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "French Beret",
+                    "_price": 1000000,
+                    "_lvl": 0,
+                    "_mps": 1000,
+                    "_sprite": {
+                        "instanceID": 17418
+                    },
+                    "_itemDescription": "Monsieur Cthulhu, beau chapeau de baguette à l'ail.",
+                    "_uIIcon": {
+                        "instanceID": 17420
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Angel Halo",
+                    "_price": 10000000,
+                    "_lvl": 0,
+                    "_mps": 10000,
+                    "_sprite": {
+                        "instanceID": 17422
+                    },
+                    "_itemDescription": "For the saint look that You look for in life.",
+                    "_uIIcon": {
+                        "instanceID": 17424
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Top Hat",
+                    "_price": 100000000,
+                    "_lvl": 0,
+                    "_mps": 100000,
+                    "_sprite": {
+                        "instanceID": 17426
+                    },
+                    "_itemDescription": "This 1800’s top hat is made with highest quality for the most refined gentlemen",
+                    "_uIIcon": {
+                        "instanceID": 17420
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Cat Ears",
+                    "_price": 1000000000,
+                    "_lvl": 0,
+                    "_mps": 1000000,
+                    "_sprite": {
+                        "instanceID": 17428
+                    },
+                    "_itemDescription": "OwO *what's this?*",
+                    "_uIIcon": {
+                        "instanceID": 17430
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Pope Hat",
+                    "_price": 10000000000,
+                    "_lvl": 0,
+                    "_mps": 10000000,
+                    "_sprite": {
+                        "instanceID": 17432
+                    },
+                    "_itemDescription": "That's it. It's a pope hat.",
+                    "_uIIcon": {
+                        "instanceID": 17434
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Angel Head Wings",
+                    "_price": 100000000000,
+                    "_lvl": 0,
+                    "_mps": 100000000,
+                    "_sprite": {
+                        "instanceID": 17436
+                    },
+                    "_itemDescription": "For Your Holy Spirit cosplay.",
+                    "_uIIcon": {
+                        "instanceID": 17438
+                    },
+                    "_isEquipped": false
+                }
+            ]
+        },
+        {
+            "_contentPanel": {
+                "instanceID": -4618
+            },
+            "_patternObject": {
+                "instanceID": 17406
+            },
+            "_patternItemCard": {
+                "instanceID": 17408
+            },
+            "_clothesType": 3,
+            "_clothes": [
+                {
+                    "_name": "Dungarees",
+                    "_price": 10000,
+                    "_lvl": 0,
+                    "_mps": 10,
+                    "_sprite": {
+                        "instanceID": 17440
+                    },
+                    "_itemDescription": "Whether You are planning to go grab some dinner with friends, work in the garden, or go exploring, these comfy denim trousers paired with good old work boots can get you anywhere.",
+                    "_uIIcon": {
+                        "instanceID": 17466
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Fur Coat",
+                    "_price": 100000,
+                    "_lvl": 0,
+                    "_mps": 100,
+                    "_sprite": {
+                        "instanceID": 17442
+                    },
+                    "_itemDescription": "Most stylish in our new collection, this super comfy fur coat is designed to make you the center of attention at any party, even when it takes place at the north pole. No animals were harmed in the making of this coat.",
+                    "_uIIcon": {
+                        "instanceID": 17444
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Pope Robes",
+                    "_price": 1000000,
+                    "_lvl": 0,
+                    "_mps": 1000,
+                    "_sprite": {
+                        "instanceID": 17446
+                    },
+                    "_itemDescription": "Cult managing might not always be easy. Wear these robes to look fabulous during your reign.",
+                    "_uIIcon": {
+                        "instanceID": 17448
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Hippie Clothes",
+                    "_price": 10000000,
+                    "_lvl": 0,
+                    "_mps": 10000,
+                    "_sprite": {
+                        "instanceID": 17450
+                    },
+                    "_itemDescription": "Sometimes, destroying the world isn’t just your thing you know? Sometimes the elder god just gotta relax. Make love, not terror. Peace, yo!",
+                    "_uIIcon": {
+                        "instanceID": 17452
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Maid Outfit",
+                    "_price": 100000000,
+                    "_lvl": 0,
+                    "_mps": 100000,
+                    "_sprite": {
+                        "instanceID": 17454
+                    },
+                    "_itemDescription": "Wear it to complete your femboy look, extremely effective to wear when burning villages, sinking boats, and managing a cult. UwU",
+                    "_uIIcon": {
+                        "instanceID": 17456
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Elegant Vampire Suit",
+                    "_price": 1000000000,
+                    "_lvl": 0,
+                    "_mps": 1000000,
+                    "_sprite": {
+                        "instanceID": 17458
+                    },
+                    "_itemDescription": "Most classy. Drink the blood of your enemies. Became mist, turn into a bat. Just be careful not to go out in the sun…",
+                    "_uIIcon": {
+                        "instanceID": 17460
+                    },
+                    "_isEquipped": false
+                },
+                {
+                    "_name": "Angel Wings",
+                    "_price": 10000000000,
+                    "_lvl": 0,
+                    "_mps": 10000000,
+                    "_sprite": {
+                        "instanceID": 17462
+                    },
+                    "_itemDescription": "“Do not fear me mortal” is what an angel would say, but as a cult leader it might be better to just make everybody scream at your sight.",
+                    "_uIIcon": {
+                        "instanceID": 17464
+                    },
+                    "_isEquipped": false
+                }
+            ]
+        }
+    ],
+    "Follower": {
+        "_name": "Folower",
+        "_price": 30,
+        "_lvl": 0,
+        "_mps": 1,
+        "_sprite": {
+            "instanceID": 17882
+        },
+        "MaxCount": 0,
+        "Count": 0
+    },
+    "Buildings": [
+        {
+            "_name": "House",
+            "_price": 661,
+            "_lvl": 2,
+            "_mps": 1,
+            "_sprite": {
+                "instanceID": 17884
+            },
+            "MaxFolowersCount": 10,
+            "ObjectOnIsland": {
+                "instanceID": -3898
+            }
+        },
+        {
+            "_name": "Town Hall",
+            "_price": 7500,
+            "_lvl": 0,
+            "_mps": 10,
+            "_sprite": {
+                "instanceID": 17886
+            },
+            "MaxFolowersCount": 15,
+            "ObjectOnIsland": {
+                "instanceID": -3894
+            }
+        },
+        {
+            "_name": "Lighthouse",
+            "_price": 120000,
+            "_lvl": 0,
+            "_mps": 100,
+            "_sprite": {
+                "instanceID": 17888
+            },
+            "MaxFolowersCount": 20,
+            "ObjectOnIsland": {
+                "instanceID": -3844
+            }
+        },
+        {
+            "_name": "Harbour",
+            "_price": 2500000,
+            "_lvl": 0,
+            "_mps": 1000,
+            "_sprite": {
+                "instanceID": 17890
+            },
+            "MaxFolowersCount": 30,
+            "ObjectOnIsland": {
+                "instanceID": -3676
+            }
+        },
+        {
+            "_name": "Church",
+            "_price": 50000000,
+            "_lvl": 0,
+            "_mps": 10000,
+            "_sprite": {
+                "instanceID": 17892
+            },
+            "MaxFolowersCount": 50,
+            "ObjectOnIsland": {
+                "instanceID": -3664
+            }
+        }
+    ]
+}

@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class SaveAndLoadGame : MonoBehaviour
 {
-    [SerializeField] private GameDataCollector _gameDataCollector;
-    
+    private GameDataCollector _gameDataCollector;
     private GameData _gameData;
     private string _savePath;
 
     private void Start()
     {
+        _gameDataCollector = GetComponent<GameDataCollector>();
         _savePath = $"{Application.dataPath}/Save.json";
         LoadGame();
     }
@@ -18,8 +18,8 @@ public class SaveAndLoadGame : MonoBehaviour
 
     private void SaveGame()
     {
-        _gameData = new GameData(GetComponent<GameDataCollector>());
-        var dataToSave = JsonUtility.ToJson(_gameData);
+        _gameData = new GameData(_gameDataCollector);
+        var dataToSave = JsonUtility.ToJson(_gameData, true);
         File.WriteAllText(_savePath, dataToSave);
     }
 

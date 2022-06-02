@@ -21,15 +21,25 @@ public class Building : Item
 
 public class BuildingsShopPanel : MonoBehaviour
 {
+    [SerializeField] private AudioSource _audioSource;
     [SerializeField] private Transform _shopContentPanel;
     [SerializeField] private Transform _patternObject;
     [SerializeField] private PointsManager _pointsManager;
     [SerializeField] private UpdateScoreUI _updateScoreUI;
     [SerializeField] private SpawnNpcs _spawnNpcs;
 
-    public Follower Follower => _follower;
+    public Follower Follower
+    {
+        get => _follower;
+        set => _follower = value;
+    }
     [SerializeField] private Follower _follower;
-    public List<Building> Buildings => _buildings;
+
+    public List<Building> Buildings
+    {
+        get => _buildings;
+        set => _buildings = value;
+    }
     [SerializeField] private List<Building> _buildings;
 
     private void Start()
@@ -44,12 +54,15 @@ public class BuildingsShopPanel : MonoBehaviour
         
         cloneFollower.GetChild(2).GetComponent<Button>().onClick.AddListener(delegate
         {
+            _audioSource.Play();
+            
             if (_pointsManager.Points >= _follower.Price && _follower.MaxCount >= _follower.Count)
             {
                 _follower.Lvl++;
                 _follower.Count++;
                 _pointsManager.SubtractPoints(_follower.Price);
                 _updateScoreUI.UpdateUI(_pointsManager.Points);
+                _follower.Mps = _follower.Mps * _follower.Count;
                 _follower.Price += (ulong)(_follower.Price * 0.15f);
 
                 cloneFollower.GetComponent<PatternBuilding>().ImportData(
@@ -79,6 +92,8 @@ public class BuildingsShopPanel : MonoBehaviour
 
             clone.GetChild(2).GetComponent<Button>().onClick.AddListener(delegate
             {
+                _audioSource.Play();
+                
                 if (_pointsManager.Points >= item.Price)
                 {
                     item.Lvl++;

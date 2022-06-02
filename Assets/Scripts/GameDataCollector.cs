@@ -1,36 +1,33 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameDataCollector : MonoBehaviour
 {
     public PointsManager PointsManager;
-    //public ClothesShopPanel ClothesShopPanel;
+    public ClothesShopPanel ClothesShopPanel;
+    public BuildingsShopPanel BuildingsShopPanel;
 
     public void LoadData(GameData gameData)
     {
         PointsManager.Points = gameData.Points;
-        //
-        // // Load data to ClothesShopPanel
-        // foreach (var clothesPanel in ClothesShopPanel.ClothesPanels)
-        // {
-        //     for (int i = 0; i < clothesPanel.Clothes.Count; i++)
-        //     {
-        //         clothesPanel.Clothes[i].Lvl = ClothesShopPanel.ClothesPanels[i].Clothes[i].Lvl;
-        //         clothesPanel.Clothes[i].Mps = ClothesShopPanel.ClothesPanels[i].Clothes[i].Mps;
-        //         clothesPanel.Clothes[i].Price = ClothesShopPanel.ClothesPanels[i].Clothes[i].Price;
-        //     }
-        // }
-        
+        ClothesShopPanel.ClothesPanels = gameData.Wardrobes;
+        BuildingsShopPanel.Follower = gameData.Follower;
+        BuildingsShopPanel.Buildings = gameData.Buildings;
     }
 }
 
 public class GameData
 {
     public ulong Points;
-    //public ClothesShopPanel ClothesShopPanel;
+    public List<Wardrobe> Wardrobes;
+    public Follower Follower;
+    public List<Building> Buildings;
 
     public GameData(GameDataCollector gameDataCollector)
     {
         Points = gameDataCollector.PointsManager.Points;
-        //ClothesShopPanel = new ClothesShopPanel(gameDataCollector.ClothesShopPanel);
+        Wardrobes = gameDataCollector.ClothesShopPanel.ClothesPanels;
+        Follower = gameDataCollector.BuildingsShopPanel.Follower;
+        Buildings = gameDataCollector.BuildingsShopPanel.Buildings;
     }
 }

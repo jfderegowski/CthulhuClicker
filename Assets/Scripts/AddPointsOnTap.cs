@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Lean.Touch;
 using UnityEngine;
 
@@ -28,6 +29,7 @@ public class AddPointsOnTap : MonoBehaviour
     public ulong CountPointsToAdd()
     {
         ulong pointsToAdd = _pointsManager.BuildingsShopPanel.Follower.Mps;
+        
         return pointsToAdd;
     }
 }

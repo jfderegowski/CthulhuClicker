@@ -6,7 +6,7 @@ using UnityEngine;
 
 [Serializable]
 public class Wardrobe
-{
+{ 
     public Transform ContentPanel
     {
         get => _contentPanel;
@@ -55,6 +55,7 @@ public class Clothes : Item
 
 public class ClothesShopPanel : MonoBehaviour
 {
+    [SerializeField] private AudioSource _audioSource;
     [SerializeField] private CharacterDisplay _characterDisplay;
     
     [SerializeField] private PointsManager _pointsManager;
@@ -68,19 +69,6 @@ public class ClothesShopPanel : MonoBehaviour
         set => _clothesPanels = value;
     }
     [SerializeField] private List<Wardrobe> _clothesPanels;
-
-    // public ClothesShopPanel(ClothesShopPanel clothesShopPanel)
-    // {
-    //     foreach (var clothesPanel in clothesShopPanel._clothesPanels)
-    //     {
-    //         for (int i = 0; i < clothesPanel.Clothes.Count; i++)
-    //         {
-    //             clothesPanel.Clothes[i].Lvl = clothesShopPanel.ClothesPanels[i].Clothes[i].Lvl;
-    //             clothesPanel.Clothes[i].Mps = clothesShopPanel.ClothesPanels[i].Clothes[i].Mps;
-    //             clothesPanel.Clothes[i].Price = clothesShopPanel.ClothesPanels[i].Clothes[i].Price;
-    //         }
-    //     }
-    // }
     
     private void Awake()
     {
@@ -91,14 +79,24 @@ public class ClothesShopPanel : MonoBehaviour
                 var clone = Instantiate(clothesPanel.PatternObject, clothesPanel.ContentPanel);
                 clone.GetComponent<PatternWardrobe>().ImportData(clothes.UIIcon, delegate
                 {
+                    _audioSource.Play();
+                    
                     var itemCard = Instantiate(clothesPanel.PatternItemCard, _contentPanelForItemCard);
+                    itemCard.GetComponent<PatternItemPreview>().ButtonBuyText = $"{clothes.Price} Many";
+                    
+                    if(clothes.IsEquipped)
+                        itemCard.GetComponent<PatternItemPreview>().ButtonEquipText = $"Equipped";
+                    
                     itemCard.GetComponent<PatternItemPreview>().Import(
+                        _audioSource,
                         clothes.Sprite,
                         clothesPanel.ClothesType,
                         clothes.Name,
                         clothes.ItemDescription,
                         delegate
                         {
+                            _audioSource.Play();
+                            
                             if (clothes.Lvl > 0)
                             {
                                 foreach (var clothe in clothesPanel.Clothes)
@@ -108,6 +106,8 @@ public class ClothesShopPanel : MonoBehaviour
 
                                 clothes.IsEquipped = true;
                                 _characterDisplay.EquipItem(clothes.Sprite, clothesPanel.ClothesType);
+                                
+                                itemCard.GetComponent<PatternItemPreview>().ButtonEquipText = $"Equipped";
                             }
                             else
                             {
@@ -118,12 +118,15 @@ public class ClothesShopPanel : MonoBehaviour
                         },
                         delegate
                         {
+                            _audioSource.Play();
+                            
                             if (_pointsManager.Points >= clothes.Price)
                             {
                                 clothes.Lvl++;
                                 _pointsManager.SubtractPoints(clothes.Price);
                                 _updateScoreUI.UpdateUI(_pointsManager.Points);
                                 clothes.Price += (ulong)(clothes.Price * 0.15f);
+                                itemCard.GetComponent<PatternItemPreview>().ButtonBuyText = $"{clothes.Price} Many";
                             }
                             else
                             {

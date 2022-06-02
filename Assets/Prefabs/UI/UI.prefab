@@ -35,10 +35,10 @@ RectTransform:
   m_Father: {fileID: 3551664391496185178}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 349.99997, y: -1350.4985}
+  m_SizeDelta: {x: 599.99994, y: 164.3324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &403177183
 CanvasRenderer:
@@ -456,7 +456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3551664390347201240
 RectTransform:
   m_ObjectHideFlags: 0
@@ -538,10 +538,10 @@ RectTransform:
   m_Father: {fileID: 3551664390347201240}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -75}
-  m_SizeDelta: {x: 600, y: 150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 350, y: 0}
+  m_SizeDelta: {x: 600, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3551664390347289461
 MonoBehaviour:
@@ -640,10 +640,10 @@ RectTransform:
   m_Father: {fileID: 3551664391909962672}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300, y: -645.92236}
-  m_SizeDelta: {x: 600, y: 1091.806}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3551664390403202581
 MonoBehaviour:
@@ -903,10 +903,10 @@ RectTransform:
   m_Father: {fileID: 3551664391909962672}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300, y: -50.009663}
-  m_SizeDelta: {x: 600, y: 100.019325}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3551664390604713701
 MonoBehaviour:
@@ -966,6 +966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10aa2b1e8e28b98488e4270840732620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
   _buttonsAndPanelsList:
   - _button: {fileID: 3551664392148390332}
     _panel: {fileID: 3551664390971444811}
@@ -1004,10 +1005,10 @@ RectTransform:
   m_Father: {fileID: 3551664390604713703}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 95, y: -50.009663}
-  m_SizeDelta: {x: 170, y: 80.019325}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3551664390776355667
 CanvasRenderer:
@@ -1516,7 +1517,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 10}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3551664390971444806
 MonoBehaviour:
@@ -1590,10 +1591,10 @@ RectTransform:
   m_Father: {fileID: 3551664390604713703}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 492.5, y: -50.009663}
-  m_SizeDelta: {x: 195, y: 80.019325}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3551664391194715010
 CanvasRenderer:
@@ -1694,7 +1695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3551664391496185178
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1730,8 +1731,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buttonAudio: {fileID: 957502398842977858}
   _audio: {fileID: 0}
-  _audioMute: {fileID: 0}
-  _audioUnMute: {fileID: 0}
+  _audioMute: {fileID: 21300000, guid: 7e75ab67dccd8cb49ae05a35dc0737a1, type: 3}
+  _audioUnMute: {fileID: 21300000, guid: b88000b0a04c8bb44aad7bdbe6b6169e, type: 3}
 --- !u!114 &543756120287526456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1750,7 +1751,7 @@ MonoBehaviour:
     m_Top: 50
     m_Bottom: 50
   m_ChildAlignment: 0
-  m_Spacing: 50
+  m_Spacing: 1000
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -2034,8 +2035,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Shirts
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 22a3f6f8e1bed4843b04be793645dc2b, type: 2}
+  m_sharedMaterial: {fileID: -1739066183992435544, guid: 22a3f6f8e1bed4843b04be793645dc2b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2390,10 +2391,10 @@ RectTransform:
   m_Father: {fileID: 3551664390347201240}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -745.91266}
-  m_SizeDelta: {x: 600, y: 1191.8253}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3551664391909962673
 MonoBehaviour:
@@ -2701,6 +2702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10aa2b1e8e28b98488e4270840732620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
   _buttonsAndPanelsList:
   - _button: {fileID: 3551664390551085539}
     _panel: {fileID: 3551664390347201243}
@@ -2876,10 +2878,10 @@ RectTransform:
   m_Father: {fileID: 3551664390604713703}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 287.5, y: -50.009663}
-  m_SizeDelta: {x: 195, y: 80.019325}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3551664392148390330
 CanvasRenderer:
@@ -3034,10 +3036,10 @@ RectTransform:
   m_Father: {fileID: 3551664391496185178}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 349.99997, y: -159.1662}
+  m_SizeDelta: {x: 599.99994, y: 218.3324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4455554087658322988
 CanvasRenderer:
@@ -3252,6 +3254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a6146584d670544db87fc3700aeaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
   _shopContentPanel: {fileID: 3793133798072307555}
   _patternObject: {fileID: 7364476353724869991, guid: 24610faf50f6364498d5118790c88678, type: 3}
   _pointsManager: {fileID: 0}
@@ -3261,7 +3264,7 @@ MonoBehaviour:
     _name: Folower
     _price: 30
     _lvl: 0
-    _mps: 5
+    _mps: 1
     _sprite: {fileID: 21300000, guid: d8e7df3bf79590b4386bfb90f3da4d60, type: 3}
     MaxCount: 0
     Count: 0
@@ -3313,6 +3316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fff073d3c823cc40995964da7f4585c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
   _characterDisplay: {fileID: 0}
   _pointsManager: {fileID: 0}
   _updateScoreUI: {fileID: 0}
@@ -3323,26 +3327,144 @@ MonoBehaviour:
     _patternItemCard: {fileID: 3175297232141965476, guid: 3714202a76f9e6a4f86f3d2f84983c26, type: 3}
     _clothesType: 4
     _clothes:
-    - _name: czapek
-      _price: 0
+    - _name: Frog Hat
+      _price: 10000
       _lvl: 0
-      _mps: 0
-      _sprite: {fileID: 21300000, guid: 2aedbbb7fee33284d9680c155ffa8271, type: 3}
-      _itemDescription: fanu capaek
+      _mps: 10
+      _sprite: {fileID: 21300000, guid: 990fad09181365146bdda91bec20c718, type: 3}
+      _itemDescription: Frog hat.
+      _uIIcon: {fileID: 21300000, guid: d987a179c93a24048ae6409410774dcc, type: 3}
+      _isEquipped: 0
+    - _name: Flower Garland
+      _price: 100000
+      _lvl: 0
+      _mps: 100
+      _sprite: {fileID: 21300000, guid: 428b42a21cd840443bca09edbdd4ffe7, type: 3}
+      _itemDescription: "Something to soothe your nerves\u2026 gotta look pretty
+        while destroying the world!"
+      _uIIcon: {fileID: 21300000, guid: b96edd90d317eac4d84f13312c052129, type: 3}
+      _isEquipped: 0
+    - _name: French Beret
+      _price: 1000000
+      _lvl: 0
+      _mps: 1000
+      _sprite: {fileID: 21300000, guid: b48ed7d28bbe9a2489dea936b303d2dc, type: 3}
+      _itemDescription: "Monsieur Cthulhu, beau chapeau de baguette \xE0 l'ail."
       _uIIcon: {fileID: 21300000, guid: 1b7d80cca19ef0942a59b963a5df369a, type: 3}
+      _isEquipped: 0
+    - _name: Angel Halo
+      _price: 10000000
+      _lvl: 0
+      _mps: 10000
+      _sprite: {fileID: 21300000, guid: 399e49bb74fa78f4d9e4d1919515e8a6, type: 3}
+      _itemDescription: For the saint look that You look for in life.
+      _uIIcon: {fileID: 21300000, guid: 010e3d421001515429d35c20af0f6cab, type: 3}
+      _isEquipped: 0
+    - _name: Top Hat
+      _price: 100000000
+      _lvl: 0
+      _mps: 100000
+      _sprite: {fileID: 21300000, guid: 2aedbbb7fee33284d9680c155ffa8271, type: 3}
+      _itemDescription: "This 1800\u2019s top hat is made with highest quality for
+        the most refined gentlemen"
+      _uIIcon: {fileID: 21300000, guid: 1b7d80cca19ef0942a59b963a5df369a, type: 3}
+      _isEquipped: 0
+    - _name: Cat Ears
+      _price: 1000000000
+      _lvl: 0
+      _mps: 1000000
+      _sprite: {fileID: 21300000, guid: 22939a2191b68f44f9a8032f5b82aa75, type: 3}
+      _itemDescription: OwO *what's this?*
+      _uIIcon: {fileID: 21300000, guid: 16d098e197e515a45a3b65a90087f3f4, type: 3}
+      _isEquipped: 0
+    - _name: Pope Hat
+      _price: 10000000000
+      _lvl: 0
+      _mps: 10000000
+      _sprite: {fileID: 21300000, guid: 4903aa129a3a37b45a897fbefa21a2cf, type: 3}
+      _itemDescription: That's it. It's a pope hat.
+      _uIIcon: {fileID: 21300000, guid: a49a286ed11b2ee4bbabd254d8451950, type: 3}
+      _isEquipped: 0
+    - _name: Angel Head Wings
+      _price: 100000000000
+      _lvl: 0
+      _mps: 100000000
+      _sprite: {fileID: 21300000, guid: d7401137a5bae8f49b26e5a40327f3ac, type: 3}
+      _itemDescription: For Your Holy Spirit cosplay.
+      _uIIcon: {fileID: 21300000, guid: 1695a6798ab7c0d4ab73d1693b80682a, type: 3}
       _isEquipped: 0
   - _contentPanel: {fileID: 3551664391601860271}
     _patternObject: {fileID: 880362165956499981, guid: d2b8111f537fd25429831fdd457cecce, type: 3}
     _patternItemCard: {fileID: 3175297232141965476, guid: 3714202a76f9e6a4f86f3d2f84983c26, type: 3}
     _clothesType: 3
     _clothes:
-    - _name: smokingek
-      _price: 0
+    - _name: Dungarees
+      _price: 10000
       _lvl: 0
-      _mps: 0
+      _mps: 10
       _sprite: {fileID: 21300000, guid: 33d9b05f5af3c9149910045e4a331c53, type: 3}
-      _itemDescription: fajny smokinkeg
+      _itemDescription: Whether You are planning to go grab some dinner with friends,
+        work in the garden, or go exploring, these comfy denim trousers paired with
+        good old work boots can get you anywhere.
       _uIIcon: {fileID: 21300000, guid: 7fc8f5126fd2405428e3af416d32bbb3, type: 3}
+      _isEquipped: 0
+    - _name: Fur Coat
+      _price: 100000
+      _lvl: 0
+      _mps: 100
+      _sprite: {fileID: 21300000, guid: 3ded1a1903938484aa46da8fcb2b1a9f, type: 3}
+      _itemDescription: Most stylish in our new collection, this super comfy fur
+        coat is designed to make you the center of attention at any party, even when
+        it takes place at the north pole. No animals were harmed in the making of
+        this coat.
+      _uIIcon: {fileID: 21300000, guid: 8bad20a33b448c2428ded93803637ed1, type: 3}
+      _isEquipped: 0
+    - _name: Pope Robes
+      _price: 1000000
+      _lvl: 0
+      _mps: 1000
+      _sprite: {fileID: 21300000, guid: 277e476416b84bc428654ec331482ea3, type: 3}
+      _itemDescription: Cult managing might not always be easy. Wear these robes
+        to look fabulous during your reign.
+      _uIIcon: {fileID: 21300000, guid: 87ef18f503217aa4a95a1e29d415a067, type: 3}
+      _isEquipped: 0
+    - _name: Hippie Clothes
+      _price: 10000000
+      _lvl: 0
+      _mps: 10000
+      _sprite: {fileID: 21300000, guid: 73adbcbb403ea1944b21abd091b1d7a6, type: 3}
+      _itemDescription: "Sometimes, destroying the world isn\u2019t just your thing
+        you know? Sometimes the elder god just gotta relax. Make love, not terror.
+        Peace, yo!"
+      _uIIcon: {fileID: 21300000, guid: ee8a6d38f89f4fc44bdf24b09bfc222f, type: 3}
+      _isEquipped: 0
+    - _name: Maid Outfit
+      _price: 100000000
+      _lvl: 0
+      _mps: 100000
+      _sprite: {fileID: 21300000, guid: 0e7e50f66667c7e4f8b7e99c293faca7, type: 3}
+      _itemDescription: Wear it to complete your femboy look, extremely effective
+        to wear when burning villages, sinking boats, and managing a cult. UwU
+      _uIIcon: {fileID: 21300000, guid: 6b199a1fee70fc446a460a36d3ad70fc, type: 3}
+      _isEquipped: 0
+    - _name: Elegant Vampire Suit
+      _price: 1000000000
+      _lvl: 0
+      _mps: 1000000
+      _sprite: {fileID: 21300000, guid: a1fe1bdde7de23f41bd3bdab3895add2, type: 3}
+      _itemDescription: "Most classy. Drink the blood of your enemies. Became mist,
+        turn into a bat. Just be careful not to go out in the sun\u2026"
+      _uIIcon: {fileID: 21300000, guid: 3309b839ea3d2ba42baa0861c48ce1cb, type: 3}
+      _isEquipped: 0
+    - _name: Angel Wings
+      _price: 10000000000
+      _lvl: 0
+      _mps: 10000000
+      _sprite: {fileID: 21300000, guid: d4890562eb0d6904594a2209b81f38e1, type: 3}
+      _itemDescription: "\u201CDo not fear me mortal\u201D is what an angel would
+        say, but as a cult leader it might be better to just make everybody scream
+        at your sight."
+      _uIIcon: {fileID: 21300000, guid: de2ad02741a9afa4c9c8eb9638dbe3a9, type: 3}
       _isEquipped: 0
 --- !u!1 &7026592346677478509
 GameObject:
@@ -3737,6 +3859,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1711836462}
     m_Modifications:
+    - target: {fileID: 560385225, guid: 3714202a76f9e6a4f86f3d2f84983c26, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 847954528292034030, guid: 3714202a76f9e6a4f86f3d2f84983c26, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -4117,51 +4243,59 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8903013192570643622, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013192570643622, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013192570643622, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 126.55499
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013192570643622, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 130
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013192570643622, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 63.277496
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013192570643622, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -65
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903013193684493014, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 22a3f6f8e1bed4843b04be793645dc2b, type: 2}
+    - target: {fileID: 8903013193684493014, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1739066183992435544, guid: 22a3f6f8e1bed4843b04be793645dc2b, type: 2}
     - target: {fileID: 8903013193684493015, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193684493015, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193684493015, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 433.445
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193684493015, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 130
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193684493015, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 363.2775
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193684493015, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873480, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_Name
@@ -4185,7 +4319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4193,15 +4327,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 580
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 130
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4233,11 +4367,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 300
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8903013193889873483, guid: 53020f79b7641ab40ae11a33c22028ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

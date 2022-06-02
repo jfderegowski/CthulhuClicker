@@ -11,7 +11,18 @@ namespace Patterns
     {
         public Transform ButtonBuyTransform => _buttonBuy.transform;
         public Transform ButtonEquipTransform => _buttonEquip.transform;
+        public string ButtonBuyText
+        {
+            get => _buttonBuy.GetComponentInChildren<TextMeshProUGUI>().text;
+            set => _buttonBuy.GetComponentInChildren<TextMeshProUGUI>().text = value;
+        }
+        public string ButtonEquipText
+        {
+            get => _buttonEquip.GetComponentInChildren<TextMeshProUGUI>().text;
+            set => _buttonEquip.GetComponentInChildren<TextMeshProUGUI>().text = value;
+        }
 
+        [SerializeField] private AudioSource _audioSource;
         [SerializeField] private CharacterDisplay _characterDisplay;
         [SerializeField] private TextMeshProUGUI _itemTitle;
         [SerializeField] private TextMeshProUGUI _itemDescription;
@@ -21,12 +32,16 @@ namespace Patterns
         
         private void Awake()
         {
-            _ButtonCloseItemCard.onClick.AddListener(()=>Destroy(gameObject));
+            _ButtonCloseItemCard.onClick.AddListener(delegate {
+                _audioSource.Play();
+                Destroy(gameObject);
+            });
+            
             gameObject.transform.GetChild(0).transform.DOScale(1, 0.2f);
             gameObject.transform.GetChild(1).transform.DOScale(1, 0.2f);
         }
 
-        public void Import(Sprite clothesImage, ItemType itemType, string itemTitle, string itemDescription,
+        public void Import(AudioSource audioSource, Sprite clothesImage, ItemType itemType, string itemTitle, string itemDescription,
             UnityAction buttonEquip, UnityAction buttonBuy )
         {
             switch (itemType)
@@ -49,6 +64,8 @@ namespace Patterns
                 default: break;
             }
 
+            _audioSource = audioSource;
+            
             _itemTitle.text = itemTitle;
             _itemDescription.text = itemDescription;
             

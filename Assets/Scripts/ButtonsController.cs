@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ButtonsController : MonoBehaviour
 {
+    [SerializeField] private AudioSource _audioSource;
+    
     [SerializeField] private List<ButtonsAndPanels> _buttonsAndPanelsList;
 
     private void Awake()
@@ -13,6 +15,7 @@ public class ButtonsController : MonoBehaviour
         {
             i.Button.onClick.AddListener(delegate
             {
+                _audioSource.Play();
                 ClosePanels(_buttonsAndPanelsList);
                 i.Panel.SetActive(true);
             });

@@ -4,7 +4,6 @@ using DG.Tweening;
 
 public class ShakeCthulhuOnTap : MonoBehaviour
 {
-    public GameObject Cthulhu;
     private void OnEnable()
     {
         LeanTouch.OnFingerTap += Shake;
@@ -17,8 +16,10 @@ public class ShakeCthulhuOnTap : MonoBehaviour
 
     private void Shake(LeanFinger finger)
     {
-        Debug.Log("shake");
-        //Cthulhu.transform.DOShakeScale(0.5f, 1, 10, 90, true);
-        Cthulhu.transform.DOShakeRotation(0.5f, 1, 10, 90, true);
+        if (!finger.StartedOverGui)
+        {
+            gameObject.transform
+                .DOShakeRotation(0.5f, 1, 10, 90, true);
+        }
     }
 }
