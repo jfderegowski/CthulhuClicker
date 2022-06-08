@@ -22,7 +22,6 @@ namespace Patterns
             set => _buttonEquip.GetComponentInChildren<TextMeshProUGUI>().text = value;
         }
 
-        [SerializeField] private AudioSource _audioSource;
         [SerializeField] private CharacterDisplay _characterDisplay;
         [SerializeField] private TextMeshProUGUI _itemTitle;
         [SerializeField] private TextMeshProUGUI _itemDescription;
@@ -30,6 +29,8 @@ namespace Patterns
         [SerializeField] private Button _buttonBuy;
         [SerializeField] private Button _ButtonCloseItemCard;
         
+        private AudioSource _audioSource;
+
         private void Awake()
         {
             _ButtonCloseItemCard.onClick.AddListener(delegate {
@@ -41,8 +42,8 @@ namespace Patterns
             gameObject.transform.GetChild(1).transform.DOScale(1, 0.2f);
         }
 
-        public void Import(AudioSource audioSource, Sprite clothesImage, ItemType itemType, string itemTitle, string itemDescription,
-            UnityAction buttonEquip, UnityAction buttonBuy )
+        public void Import(AudioSource audioSource, Sprite clothesImage, ItemType itemType, string itemTitle,
+            string itemDescription, UnityAction buttonEquip, UnityAction buttonBuy)
         {
             switch (itemType)
             {
@@ -65,7 +66,7 @@ namespace Patterns
             }
 
             _audioSource = audioSource;
-            
+
             _itemTitle.text = itemTitle;
             _itemDescription.text = itemDescription;
             

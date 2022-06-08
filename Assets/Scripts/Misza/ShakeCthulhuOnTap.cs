@@ -16,9 +16,9 @@ public class ShakeCthulhuOnTap : MonoBehaviour
 
     private void Shake(LeanFinger finger)
     {
-        if (!finger.StartedOverGui)
+        if (!finger.StartedOverGui && transform.eulerAngles == new Vector3(0,0,0))
         {
-            gameObject.transform
+            transform
                 .DOShakeRotation(0.5f, 1, 10, 90, true);
         }
     }

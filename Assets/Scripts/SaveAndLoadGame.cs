@@ -25,6 +25,8 @@ public class SaveAndLoadGame : MonoBehaviour
 
     private void LoadGame()
     {
+        if (!File.Exists(_savePath)) return;
+        
         var dataToLoad = File.ReadAllText(_savePath);
         var gameData = JsonUtility.FromJson<GameData>(dataToLoad);
         _gameDataCollector.LoadData(gameData);

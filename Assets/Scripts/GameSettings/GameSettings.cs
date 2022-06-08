@@ -16,13 +16,15 @@ namespace GameSettings
             {
                 if (_audio.activeSelf)
                 {
+                    _audio.transform.GetChild(2).GetComponent<AudioSource>().Play();
                     _audio.SetActive(false);
-                    _audio.GetComponent<Image>().sprite = _audioMute;
+                    _buttonAudio.GetComponent<Image>().sprite = _audioMute;
                 }
                 else
                 {
                     _audio.SetActive(true);
-                    _audio.GetComponent<Image>().sprite = _audioUnMute;
+                    _audio.transform.GetChild(2).GetComponent<AudioSource>().Play();
+                    _buttonAudio.GetComponent<Image>().sprite = _audioUnMute;
                 }
             });
         }

@@ -57,12 +57,11 @@ public class ClothesShopPanel : MonoBehaviour
 {
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private CharacterDisplay _characterDisplay;
-    
     [SerializeField] private PointsManager _pointsManager;
     [SerializeField] private UpdateScoreUI _updateScoreUI;
-    
     [SerializeField] private Transform _contentPanelForItemCard;
 
+    [SerializeField] private EquippedItems _equippedItems;
     public List<Wardrobe> ClothesPanels
     {
         get => _clothesPanels;
@@ -72,70 +71,77 @@ public class ClothesShopPanel : MonoBehaviour
     
     private void Awake()
     {
-        foreach (var clothesPanel in _clothesPanels)
+        for (int clothesPanel = 0; clothesPanel < _clothesPanels.Count; clothesPanel++)
         {
-            foreach (var clothes in clothesPanel.Clothes)
+            for (int clothes = 0; clothes < _clothesPanels[clothesPanel].Clothes.Count; clothes++)
             {
-                var clone = Instantiate(clothesPanel.PatternObject, clothesPanel.ContentPanel);
-                clone.GetComponent<PatternWardrobe>().ImportData(clothes.UIIcon, delegate
+                var tmpClothesPanel = clothesPanel;
+                var tmpClothes = clothes;
+                
+                var clone = Instantiate(_clothesPanels[clothesPanel].PatternObject, _clothesPanels[clothesPanel].ContentPanel);
+                
+                clone.GetComponent<PatternWardrobe>().ImportData(_clothesPanels[clothesPanel].Clothes[clothes].UIIcon, delegate
                 {
                     _audioSource.Play();
                     
-                    var itemCard = Instantiate(clothesPanel.PatternItemCard, _contentPanelForItemCard);
-                    itemCard.GetComponent<PatternItemPreview>().ButtonBuyText = $"{clothes.Price} Many";
+                    var itemCard = Instantiate(_clothesPanels[tmpClothesPanel].PatternItemCard, _contentPanelForItemCard);
                     
-                    if(clothes.IsEquipped)
-                        itemCard.GetComponent<PatternItemPreview>().ButtonEquipText = $"Equipped";
+                    itemCard.GetComponent<PatternItemPreview>().ButtonBuyText = $"{_clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Price} Many";
                     
-                    itemCard.GetComponent<PatternItemPreview>().Import(
-                        _audioSource,
-                        clothes.Sprite,
-                        clothesPanel.ClothesType,
-                        clothes.Name,
-                        clothes.ItemDescription,
-                        delegate
-                        {
-                            _audioSource.Play();
-                            
-                            if (clothes.Lvl > 0)
-                            {
-                                foreach (var clothe in clothesPanel.Clothes)
-                                {
-                                    clothe.IsEquipped = false;
-                                }
-
-                                clothes.IsEquipped = true;
-                                _characterDisplay.EquipItem(clothes.Sprite, clothesPanel.ClothesType);
-                                
-                                itemCard.GetComponent<PatternItemPreview>().ButtonEquipText = $"Equipped";
-                            }
-                            else
-                            {
-                                //Button shake
-                                itemCard.GetComponent<PatternItemPreview>().ButtonEquipTransform
-                                    .DOShakeRotation(0.1f, 10f);
-                            }
-                        },
-                        delegate
-                        {
-                            _audioSource.Play();
-                            
-                            if (_pointsManager.Points >= clothes.Price)
-                            {
-                                clothes.Lvl++;
-                                _pointsManager.SubtractPoints(clothes.Price);
-                                _updateScoreUI.UpdateUI(_pointsManager.Points);
-                                clothes.Price += (ulong)(clothes.Price * 0.15f);
-                                itemCard.GetComponent<PatternItemPreview>().ButtonBuyText = $"{clothes.Price} Many";
-                            }
-                            else
-                            {
-                                //Button shake
-                                itemCard.GetComponent<PatternItemPreview>().ButtonBuyTransform
-                                    .DOShakeRotation(0.1f, 10f);
-                            }
-                        }
-                    );
+                     if(_clothesPanels[tmpClothesPanel].Clothes[tmpClothes].IsEquipped)
+                         itemCard.GetComponent<PatternItemPreview>().ButtonEquipText = $"Equipped";
+                    
+                     itemCard.GetComponent<PatternItemPreview>().Import(
+                         _audioSource,
+                         _clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Sprite,
+                         _clothesPanels[tmpClothesPanel].ClothesType,
+                         _clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Name,
+                         _clothesPanels[tmpClothesPanel].Clothes[tmpClothes].ItemDescription, 
+                         delegate
+                         {
+                             _audioSource.Play();
+                             
+                             if (_clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Lvl > 0)
+                             {
+                                 foreach (var t in _clothesPanels[tmpClothesPanel].Clothes)
+                                 {
+                                     t.IsEquipped = false;
+                                 }
+                    
+                                 _clothesPanels[tmpClothesPanel].Clothes[tmpClothes].IsEquipped = true;
+                                 _characterDisplay.EquipItem(_clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Sprite, _clothesPanels[tmpClothesPanel].ClothesType);
+                                 
+                                 itemCard.GetComponent<PatternItemPreview>().ButtonEquipText = $"Equipped";
+                                 
+                                 _equippedItems.DisplayEquippedItemInShop(_clothesPanels[tmpClothesPanel], _clothesPanels[tmpClothesPanel].Clothes[tmpClothes]);
+                             }
+                             else
+                             {
+                                 //Button shake
+                                 itemCard.GetComponent<PatternItemPreview>().ButtonEquipTransform
+                                     .DOShakeRotation(0.1f, 10f);
+                             }
+                         },
+                         delegate
+                         {
+                             _audioSource.Play();
+                             
+                             if (_pointsManager.Points >= _clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Price)
+                             {
+                                 _clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Lvl++;
+                                 _pointsManager.SubtractPoints(_clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Price);
+                                 _updateScoreUI.UpdateUI(_pointsManager.Points);
+                                 _clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Price += (ulong)(_clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Price * 0.15f);
+                                 itemCard.GetComponent<PatternItemPreview>().ButtonBuyText = $"{_clothesPanels[tmpClothesPanel].Clothes[tmpClothes].Price} Many";
+                             }
+                             else
+                             {
+                                 //Button shake
+                                 itemCard.GetComponent<PatternItemPreview>().ButtonBuyTransform
+                                     .DOShakeRotation(0.1f, 10f);
+                             }
+                         }
+                     );
                 });
             }
         }
