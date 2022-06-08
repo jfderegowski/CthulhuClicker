@@ -44,7 +44,7 @@ public class BuildingsShopPanel : MonoBehaviour
 
     private void Start()
     {
-        // follower
+        // Followers
         var cloneFollower = Instantiate(_patternObject, _shopContentPanel);
         cloneFollower.GetComponent<PatternBuilding>().ImportData(
             _follower.Sprite,
@@ -58,12 +58,11 @@ public class BuildingsShopPanel : MonoBehaviour
             
             if (_pointsManager.Points >= _follower.Price && _follower.MaxCount >= _follower.Count)
             {
-                _follower.Lvl++;
-                _follower.Count++;
                 _pointsManager.SubtractPoints(_follower.Price);
                 _updateScoreUI.UpdateUI(_pointsManager.Points);
-                _follower.Mps = _follower.Mps * _follower.Count;
                 _follower.Price += (ulong)(_follower.Price * 0.15f);
+                _follower.Lvl++;
+                _follower.Count++;
 
                 cloneFollower.GetComponent<PatternBuilding>().ImportData(
                     $"{_follower.Name}: {_follower.Lvl}\nPosiadasz: {_follower.Count} followers",
@@ -74,13 +73,13 @@ public class BuildingsShopPanel : MonoBehaviour
             }
             else
             {
-                //animacja trzęsienia sie przycisku
+                // Shake button
                 cloneFollower.GetChild(2).DOShakeRotation(0.1f, 10f);
             }
         });
 
         
-        // lista itemów
+        // Building list
         foreach (var item in _buildings)
         {
             var clone = Instantiate(_patternObject, _shopContentPanel);
@@ -113,7 +112,7 @@ public class BuildingsShopPanel : MonoBehaviour
                 }
                 else
                 {
-                    //animacja trzęsienia sie przycisku
+                    // Shake button
                     clone.GetChild(2).DOShakeRotation(0.1f, 10f);
                 }
             });

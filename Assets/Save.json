@@ -1,43 +1,43 @@
 {
-    "Points": 18446744073708052263,
+    "Points": 40,
     "Wardrobes": [
         {
             "_contentPanel": {
-                "instanceID": -1750
+                "instanceID": -6562
             },
             "_patternObject": {
-                "instanceID": 18388
+                "instanceID": 9574
             },
             "_patternItemCard": {
-                "instanceID": 18354
+                "instanceID": 9576
             },
             "_clothesType": 4,
             "_clothes": [
                 {
                     "_name": "Frog Hat",
-                    "_price": 61515,
-                    "_lvl": 13,
+                    "_price": 10000,
+                    "_lvl": 0,
                     "_mps": 10,
                     "_sprite": {
-                        "instanceID": 18390
+                        "instanceID": 9578
                     },
                     "_itemDescription": "Frog hat.",
                     "_uIIcon": {
-                        "instanceID": 18392
+                        "instanceID": 8528
                     },
-                    "_isEquipped": true
+                    "_isEquipped": false
                 },
                 {
                     "_name": "Flower Garland",
-                    "_price": 115000,
-                    "_lvl": 1,
+                    "_price": 100000,
+                    "_lvl": 0,
                     "_mps": 100,
                     "_sprite": {
-                        "instanceID": 18394
+                        "instanceID": 9580
                     },
                     "_itemDescription": "Something to soothe your nerves… gotta look pretty while destroying the world!",
                     "_uIIcon": {
-                        "instanceID": 18396
+                        "instanceID": 9582
                     },
                     "_isEquipped": false
                 },
@@ -47,11 +47,11 @@
                     "_lvl": 0,
                     "_mps": 1000,
                     "_sprite": {
-                        "instanceID": 18398
+                        "instanceID": 9584
                     },
                     "_itemDescription": "Monsieur Cthulhu, beau chapeau de baguette à l'ail.",
                     "_uIIcon": {
-                        "instanceID": 18400
+                        "instanceID": 9586
                     },
                     "_isEquipped": false
                 },
@@ -61,11 +61,11 @@
                     "_lvl": 0,
                     "_mps": 10000,
                     "_sprite": {
-                        "instanceID": 18402
+                        "instanceID": 9588
                     },
                     "_itemDescription": "For the saint look that You look for in life.",
                     "_uIIcon": {
-                        "instanceID": 18404
+                        "instanceID": 9590
                     },
                     "_isEquipped": false
                 },
@@ -75,11 +75,11 @@
                     "_lvl": 0,
                     "_mps": 100000,
                     "_sprite": {
-                        "instanceID": 18406
+                        "instanceID": 9592
                     },
                     "_itemDescription": "This 1800’s top hat is made with highest quality for the most refined gentlemen",
                     "_uIIcon": {
-                        "instanceID": 18400
+                        "instanceID": 9586
                     },
                     "_isEquipped": false
                 },
@@ -89,11 +89,11 @@
                     "_lvl": 0,
                     "_mps": 1000000,
                     "_sprite": {
-                        "instanceID": 18408
+                        "instanceID": 9594
                     },
                     "_itemDescription": "OwO *what's this?*",
                     "_uIIcon": {
-                        "instanceID": 18410
+                        "instanceID": 9596
                     },
                     "_isEquipped": false
                 },
@@ -103,11 +103,11 @@
                     "_lvl": 0,
                     "_mps": 10000000,
                     "_sprite": {
-                        "instanceID": 18412
+                        "instanceID": 9598
                     },
                     "_itemDescription": "That's it. It's a pope hat.",
                     "_uIIcon": {
-                        "instanceID": 18414
+                        "instanceID": 9600
                     },
                     "_isEquipped": false
                 },
@@ -117,11 +117,11 @@
                     "_lvl": 0,
                     "_mps": 100000000,
                     "_sprite": {
-                        "instanceID": 18416
+                        "instanceID": 9602
                     },
                     "_itemDescription": "For Your Holy Spirit cosplay.",
                     "_uIIcon": {
-                        "instanceID": 18418
+                        "instanceID": 9604
                     },
                     "_isEquipped": false
                 }
@@ -129,13 +129,13 @@
         },
         {
             "_contentPanel": {
-                "instanceID": -1786
+                "instanceID": -6598
             },
             "_patternObject": {
-                "instanceID": 18388
+                "instanceID": 9574
             },
             "_patternItemCard": {
-                "instanceID": 18354
+                "instanceID": 9576
             },
             "_clothesType": 3,
             "_clothes": [
@@ -145,11 +145,11 @@
                     "_lvl": 0,
                     "_mps": 10,
                     "_sprite": {
-                        "instanceID": 18422
+                        "instanceID": 9606
                     },
                     "_itemDescription": "Whether You are planning to go grab some dinner with friends, work in the garden, or go exploring, these comfy denim trousers paired with good old work boots can get you anywhere.",
                     "_uIIcon": {
-                        "instanceID": 18424
+                        "instanceID": 9608
                     },
                     "_isEquipped": false
                 },
@@ -159,11 +159,11 @@
                     "_lvl": 0,
                     "_mps": 100,
                     "_sprite": {
-                        "instanceID": 18426
+                        "instanceID": 9610
                     },
                     "_itemDescription": "Most stylish in our new collection, this super comfy fur coat is designed to make you the center of attention at any party, even when it takes place at the north pole. No animals were harmed in the making of this coat.",
                     "_uIIcon": {
-                        "instanceID": 18428
+                        "instanceID": 9612
                     },
                     "_isEquipped": false
                 },
@@ -173,11 +173,11 @@
                     "_lvl": 0,
                     "_mps": 1000,
                     "_sprite": {
-                        "instanceID": 18430
+                        "instanceID": 9614
                     },
                     "_itemDescription": "Cult managing might not always be easy. Wear these robes to look fabulous during your reign.",
                     "_uIIcon": {
-                        "instanceID": 18432
+                        "instanceID": 9616
                     },
                     "_isEquipped": false
                 },
@@ -187,11 +187,11 @@
                     "_lvl": 0,
                     "_mps": 10000,
                     "_sprite": {
-                        "instanceID": 18434
+                        "instanceID": 9618
                     },
                     "_itemDescription": "Sometimes, destroying the world isn’t just your thing you know? Sometimes the elder god just gotta relax. Make love, not terror. Peace, yo!",
                     "_uIIcon": {
-                        "instanceID": 18436
+                        "instanceID": 9620
                     },
                     "_isEquipped": false
                 },
@@ -201,11 +201,11 @@
                     "_lvl": 0,
                     "_mps": 100000,
                     "_sprite": {
-                        "instanceID": 18438
+                        "instanceID": 9622
                     },
                     "_itemDescription": "Wear it to complete your femboy look, extremely effective to wear when burning villages, sinking boats, and managing a cult. UwU",
                     "_uIIcon": {
-                        "instanceID": 18440
+                        "instanceID": 9624
                     },
                     "_isEquipped": false
                 },
@@ -215,11 +215,11 @@
                     "_lvl": 0,
                     "_mps": 1000000,
                     "_sprite": {
-                        "instanceID": 18442
+                        "instanceID": 9626
                     },
                     "_itemDescription": "Most classy. Drink the blood of your enemies. Became mist, turn into a bat. Just be careful not to go out in the sun…",
                     "_uIIcon": {
-                        "instanceID": 18444
+                        "instanceID": 9628
                     },
                     "_isEquipped": false
                 },
@@ -229,11 +229,11 @@
                     "_lvl": 0,
                     "_mps": 10000000,
                     "_sprite": {
-                        "instanceID": 18446
+                        "instanceID": 9630
                     },
                     "_itemDescription": "“Do not fear me mortal” is what an angel would say, but as a cult leader it might be better to just make everybody scream at your sight.",
                     "_uIIcon": {
-                        "instanceID": 18448
+                        "instanceID": 9632
                     },
                     "_isEquipped": false
                 }
@@ -242,27 +242,27 @@
     ],
     "Follower": {
         "_name": "Folower",
-        "_price": 34,
+        "_price": 30,
         "_lvl": 1,
         "_mps": 1,
         "_sprite": {
-            "instanceID": 18376
+            "instanceID": 9562
         },
-        "MaxCount": 50,
-        "Count": 1
+        "MaxCount": 0,
+        "Count": 0
     },
     "Buildings": [
         {
             "_name": "House",
-            "_price": 760,
-            "_lvl": 3,
+            "_price": 500,
+            "_lvl": 0,
             "_mps": 1,
             "_sprite": {
-                "instanceID": 18378
+                "instanceID": 9564
             },
             "MaxFolowersCount": 10,
             "ObjectOnIsland": {
-                "instanceID": 17290
+                "instanceID": 22442
             }
         },
         {
@@ -271,24 +271,24 @@
             "_lvl": 0,
             "_mps": 10,
             "_sprite": {
-                "instanceID": 18380
+                "instanceID": 9566
             },
             "MaxFolowersCount": 15,
             "ObjectOnIsland": {
-                "instanceID": 17288
+                "instanceID": 22440
             }
         },
         {
             "_name": "Lighthouse",
-            "_price": 138000,
-            "_lvl": 1,
+            "_price": 120000,
+            "_lvl": 0,
             "_mps": 100,
             "_sprite": {
-                "instanceID": 18382
+                "instanceID": 9568
             },
             "MaxFolowersCount": 20,
             "ObjectOnIsland": {
-                "instanceID": 17286
+                "instanceID": 22438
             }
         },
         {
@@ -297,11 +297,11 @@
             "_lvl": 0,
             "_mps": 1000,
             "_sprite": {
-                "instanceID": 18384
+                "instanceID": 9570
             },
             "MaxFolowersCount": 30,
             "ObjectOnIsland": {
-                "instanceID": 17284
+                "instanceID": 22436
             }
         },
         {
@@ -310,11 +310,11 @@
             "_lvl": 0,
             "_mps": 10000,
             "_sprite": {
-                "instanceID": 18386
+                "instanceID": 9572
             },
             "MaxFolowersCount": 50,
             "ObjectOnIsland": {
-                "instanceID": 17280
+                "instanceID": 22432
             }
         }
     ]

@@ -56,11 +56,14 @@ public class Clothes : Item
 public class ClothesShopPanel : MonoBehaviour
 {
     [SerializeField] private AudioSource _audioSource;
-    [SerializeField] private CharacterDisplay _characterDisplay;
     [SerializeField] private PointsManager _pointsManager;
     [SerializeField] private UpdateScoreUI _updateScoreUI;
     [SerializeField] private Transform _contentPanelForItemCard;
 
+
+    public CharacterDisplay CharacterDisplay => _characterDisplay;
+    [SerializeField] private CharacterDisplay _characterDisplay;
+    public EquippedItems EquippedItems => _equippedItems;
     [SerializeField] private EquippedItems _equippedItems;
     public List<Wardrobe> ClothesPanels
     {

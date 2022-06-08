@@ -31,7 +31,7 @@ public class AddPointsOnTime : MonoBehaviour
         {
             if (building.Lvl > 0)
             {
-                pointsToAdd += building.Mps;
+                pointsToAdd += building.Mps * building.Lvl;
             }
             
         }
